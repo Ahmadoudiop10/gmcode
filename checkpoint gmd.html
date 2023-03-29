@@ -1,0 +1,1257 @@
+<!DOCTYPE html>
+<!-- saved from url=(0073)http://localhost/phpMyAdmin/index.php?route=/database/structure&db=gmcode -->
+<html lang="en" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="noindex,nofollow">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  
+  <link rel="icon" href="http://localhost/phpMyAdmin/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="http://localhost/phpMyAdmin/favicon.ico" type="image/x-icon">
+      <link rel="stylesheet" type="text/css" href="./checkpoint gmd_files/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="./checkpoint gmd_files/codemirror.css">
+    <link rel="stylesheet" type="text/css" href="./checkpoint gmd_files/show-hint.css">
+    <link rel="stylesheet" type="text/css" href="./checkpoint gmd_files/lint.css">
+    <link rel="stylesheet" type="text/css" href="./checkpoint gmd_files/theme.css">
+    <link rel="stylesheet" type="text/css" href="./checkpoint gmd_files/printview.css" media="print" id="printcss">
+    <title>localhost / localhost / gmcode | phpMyAdmin 5.1.2</title>
+    <script data-cfasync="false" type="text/javascript" src="./checkpoint gmd_files/jquery.min.js.télécharger"></script>
+  <script data-cfasync="false" type="text/javascript" src="./checkpoint gmd_files/jquery-migrate.js.télécharger"></script>
+  <script data-cfasync="false" type="text/javascript" src="./checkpoint gmd_files/sprintf.js.télécharger"></script>
+  <script data-cfasync="false" type="text/javascript" src="./checkpoint gmd_files/ajax.js.télécharger"></script>
+  <script data-cfasync="false" type="text/javascript" src="./checkpoint gmd_files/keyhandler.js.télécharger"></script>
+  <script data-cfasync="false" type="text/javascript" src="./checkpoint gmd_files/bootstrap.bundle.min.js.télécharger"></script>
+  <script data-cfasync="false" type="text/javascript" src="./checkpoint gmd_files/jquery-ui.min.js.télécharger"></script>
+  <script data-cfasync="false" type="text/javascript" src="./checkpoint gmd_files/js.cookie.js.télécharger"></script>
+  <script data-cfasync="false" type="text/javascript" src="./checkpoint gmd_files/jquery.mousewheel.js.télécharger"></script>
+  <script data-cfasync="false" type="text/javascript" src="./checkpoint gmd_files/jquery.validate.js.télécharger"></script>
+  <script data-cfasync="false" type="text/javascript" src="./checkpoint gmd_files/jquery-ui-timepicker-addon.js.télécharger"></script>
+  <script data-cfasync="false" type="text/javascript" src="./checkpoint gmd_files/jquery.ba-hashchange-2.0.js.télécharger"></script>
+  <script data-cfasync="false" type="text/javascript" src="./checkpoint gmd_files/jquery.debounce-1.0.6.js.télécharger"></script>
+  <script data-cfasync="false" type="text/javascript" src="./checkpoint gmd_files/menu_resizer.js.télécharger"></script>
+  <script data-cfasync="false" type="text/javascript" src="./checkpoint gmd_files/rte.js.télécharger"></script>
+  <script data-cfasync="false" type="text/javascript" src="./checkpoint gmd_files/tracekit.js.télécharger"></script>
+  <script data-cfasync="false" type="text/javascript" src="./checkpoint gmd_files/error_report.js.télécharger"></script>
+  <script data-cfasync="false" type="text/javascript" src="./checkpoint gmd_files/messages.php"></script>
+  <script data-cfasync="false" type="text/javascript" src="./checkpoint gmd_files/config.js.télécharger"></script>
+  <script data-cfasync="false" type="text/javascript" src="./checkpoint gmd_files/doclinks.js.télécharger"></script>
+  <script data-cfasync="false" type="text/javascript" src="./checkpoint gmd_files/functions.js.télécharger"></script>
+  <script data-cfasync="false" type="text/javascript" src="./checkpoint gmd_files/navigation.js.télécharger"></script>
+  <script data-cfasync="false" type="text/javascript" src="./checkpoint gmd_files/indexes.js.télécharger"></script>
+  <script data-cfasync="false" type="text/javascript" src="./checkpoint gmd_files/common.js.télécharger"></script>
+  <script data-cfasync="false" type="text/javascript" src="./checkpoint gmd_files/page_settings.js.télécharger"></script>
+  <script data-cfasync="false" type="text/javascript" src="./checkpoint gmd_files/drag_drop_import.js.télécharger"></script>
+  <script data-cfasync="false" type="text/javascript" src="./checkpoint gmd_files/shortcuts_handler.js.télécharger"></script>
+  <script data-cfasync="false" type="text/javascript" src="./checkpoint gmd_files/codemirror.js.télécharger"></script>
+  <script data-cfasync="false" type="text/javascript" src="./checkpoint gmd_files/sql.js.télécharger"></script>
+  <script data-cfasync="false" type="text/javascript" src="./checkpoint gmd_files/runmode.js.télécharger"></script>
+  <script data-cfasync="false" type="text/javascript" src="./checkpoint gmd_files/show-hint.js.télécharger"></script>
+  <script data-cfasync="false" type="text/javascript" src="./checkpoint gmd_files/sql-hint.js.télécharger"></script>
+  <script data-cfasync="false" type="text/javascript" src="./checkpoint gmd_files/lint.js.télécharger"></script>
+  <script data-cfasync="false" type="text/javascript" src="./checkpoint gmd_files/sql-lint.js.télécharger"></script>
+  <script data-cfasync="false" type="text/javascript" src="./checkpoint gmd_files/console.js.télécharger"></script>
+
+<script data-cfasync="false" type="text/javascript">
+// <![CDATA[
+var firstDayOfCalendar = '0';
+var themeImagePath = '.\/themes\/pmahomme\/img\/';
+var mysqlDocTemplate = '.\/url.php\u003Furl\u003Dhttps\u00253A\u00252F\u00252Fdev.mysql.com\u00252Fdoc\u00252Frefman\u00252F5.7\u00252Fen\u00252F\u002525s.html';
+var maxInputVars = 1000;
+
+if ($.datepicker) {
+  $.datepicker.regional[''].closeText = 'Done';
+  $.datepicker.regional[''].prevText = 'Prev';
+  $.datepicker.regional[''].nextText = 'Next';
+  $.datepicker.regional[''].currentText = 'Today';
+  $.datepicker.regional[''].monthNames = [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December',
+  ];
+  $.datepicker.regional[''].monthNamesShort = [
+    'Jan',
+    'Feb',
+    'Mar',
+    'Apr',
+    'May',
+    'Jun',
+    'Jul',
+    'Aug',
+    'Sep',
+    'Oct',
+    'Nov',
+    'Dec',
+  ];
+  $.datepicker.regional[''].dayNames = [
+    'Sunday',
+    'Monday',
+    'Tuesday',
+    'Wednesday',
+    'Thursday',
+    'Friday',
+    'Saturday',
+  ];
+  $.datepicker.regional[''].dayNamesShort = [
+    'Sun',
+    'Mon',
+    'Tue',
+    'Wed',
+    'Thu',
+    'Fri',
+    'Sat',
+  ];
+  $.datepicker.regional[''].dayNamesMin = [
+    'Su',
+    'Mo',
+    'Tu',
+    'We',
+    'Th',
+    'Fr',
+    'Sa',
+  ];
+  $.datepicker.regional[''].weekHeader = 'Wk';
+  $.datepicker.regional[''].showMonthAfterYear = false;
+  $.datepicker.regional[''].yearSuffix = '';
+  $.extend($.datepicker._defaults, $.datepicker.regional['']);
+}
+
+if ($.timepicker) {
+  $.timepicker.regional[''].timeText = 'Time';
+  $.timepicker.regional[''].hourText = 'Hour';
+  $.timepicker.regional[''].minuteText = 'Minute';
+  $.timepicker.regional[''].secondText = 'Second';
+  $.extend($.timepicker._defaults, $.timepicker.regional['']);
+}
+
+function extendingValidatorMessages () {
+  $.extend($.validator.messages, {
+    required: 'This\u0020field\u0020is\u0020required',
+    remote: 'Please\u0020fix\u0020this\u0020field',
+    email: 'Please\u0020enter\u0020a\u0020valid\u0020email\u0020address',
+    url: 'Please\u0020enter\u0020a\u0020valid\u0020URL',
+    date: 'Please\u0020enter\u0020a\u0020valid\u0020date',
+    dateISO: 'Please\u0020enter\u0020a\u0020valid\u0020date\u0020\u0028\u0020ISO\u0020\u0029',
+    number: 'Please\u0020enter\u0020a\u0020valid\u0020number',
+    creditcard: 'Please\u0020enter\u0020a\u0020valid\u0020credit\u0020card\u0020number',
+    digits: 'Please\u0020enter\u0020only\u0020digits',
+    equalTo: 'Please\u0020enter\u0020the\u0020same\u0020value\u0020again',
+    maxlength: $.validator.format('Please\u0020enter\u0020no\u0020more\u0020than\u0020\u007B0\u007D\u0020characters'),
+    minlength: $.validator.format('Please\u0020enter\u0020at\u0020least\u0020\u007B0\u007D\u0020characters'),
+    rangelength: $.validator.format('Please\u0020enter\u0020a\u0020value\u0020between\u0020\u007B0\u007D\u0020and\u0020\u007B1\u007D\u0020characters\u0020long'),
+    range: $.validator.format('Please\u0020enter\u0020a\u0020value\u0020between\u0020\u007B0\u007D\u0020and\u0020\u007B1\u007D'),
+    max: $.validator.format('Please\u0020enter\u0020a\u0020value\u0020less\u0020than\u0020or\u0020equal\u0020to\u0020\u007B0\u007D'),
+    min: $.validator.format('Please\u0020enter\u0020a\u0020value\u0020greater\u0020than\u0020or\u0020equal\u0020to\u0020\u007B0\u007D'),
+    validationFunctionForDateTime: $.validator.format('Please\u0020enter\u0020a\u0020valid\u0020date\u0020or\u0020time'),
+    validationFunctionForHex: $.validator.format('Please\u0020enter\u0020a\u0020valid\u0020HEX\u0020input'),
+    validationFunctionForMd5: $.validator.format('This\u0020column\u0020can\u0020not\u0020contain\u0020a\u002032\u0020chars\u0020value'),
+    validationFunctionForAesDesEncrypt: $.validator.format('These\u0020functions\u0020are\u0020meant\u0020to\u0020return\u0020a\u0020binary\u0020result\u003B\u0020to\u0020avoid\u0020inconsistent\u0020results\u0020you\u0020should\u0020store\u0020it\u0020in\u0020a\u0020BINARY,\u0020VARBINARY,\u0020or\u0020BLOB\u0020column.')
+  });
+}
+
+CommonParams.setAll({common_query:"",opendb_url:"index.php?route=/database/structure",lang:"en",server:"1",table:"",db:"",token:"3232366658283c48797e6f332b444043",text_dir:"ltr",show_databases_navigation_as_tree:true,pma_text_default_tab:"Browse",pma_text_left_default_tab:"Structure",pma_text_left_default_tab2:false,LimitChars:"50",pftext:"P",confirm:true,LoginCookieValidity:"1440",session_gc_maxlifetime:"1440",logged_in:true,is_https:false,rootPath:"/phpMyAdmin/",arg_separator:"&",PMA_VERSION:"5.1.2",auth_type:"config",user:"root"});
+ConsoleEnterExecutes=false
+
+AJAX.scriptHandler
+  .add('vendor/jquery/jquery.min.js', 0)
+  .add('vendor/jquery/jquery-migrate.js', 0)
+  .add('vendor/sprintf.js', 1)
+  .add('ajax.js', 0)
+  .add('keyhandler.js', 1)
+  .add('vendor/bootstrap/bootstrap.bundle.min.js', 1)
+  .add('vendor/jquery/jquery-ui.min.js', 0)
+  .add('vendor/js.cookie.js', 1)
+  .add('vendor/jquery/jquery.mousewheel.js', 0)
+  .add('vendor/jquery/jquery.validate.js', 0)
+  .add('vendor/jquery/jquery-ui-timepicker-addon.js', 0)
+  .add('vendor/jquery/jquery.ba-hashchange-2.0.js', 0)
+  .add('vendor/jquery/jquery.debounce-1.0.6.js', 0)
+  .add('menu_resizer.js', 1)
+  .add('rte.js', 1)
+  .add('vendor/tracekit.js', 1)
+  .add('error_report.js', 1)
+  .add('messages.php', 0)
+  .add('config.js', 1)
+  .add('doclinks.js', 1)
+  .add('functions.js', 1)
+  .add('navigation.js', 1)
+  .add('indexes.js', 1)
+  .add('common.js', 1)
+  .add('page_settings.js', 1)
+  .add('drag_drop_import.js', 1)
+  .add('shortcuts_handler.js', 1)
+  .add('vendor/codemirror/lib/codemirror.js', 0)
+  .add('vendor/codemirror/mode/sql/sql.js', 0)
+  .add('vendor/codemirror/addon/runmode/runmode.js', 0)
+  .add('vendor/codemirror/addon/hint/show-hint.js', 0)
+  .add('vendor/codemirror/addon/hint/sql-hint.js', 0)
+  .add('vendor/codemirror/addon/lint/lint.js', 0)
+  .add('codemirror/addon/lint/sql-lint.js', 0)
+  .add('console.js', 1)
+;
+$(function() {
+        AJAX.fireOnload('vendor/sprintf.js');
+        AJAX.fireOnload('keyhandler.js');
+      AJAX.fireOnload('vendor/bootstrap/bootstrap.bundle.min.js');
+        AJAX.fireOnload('vendor/js.cookie.js');
+                AJAX.fireOnload('menu_resizer.js');
+      AJAX.fireOnload('rte.js');
+      AJAX.fireOnload('vendor/tracekit.js');
+      AJAX.fireOnload('error_report.js');
+        AJAX.fireOnload('config.js');
+      AJAX.fireOnload('doclinks.js');
+      AJAX.fireOnload('functions.js');
+      AJAX.fireOnload('navigation.js');
+      AJAX.fireOnload('indexes.js');
+      AJAX.fireOnload('common.js');
+      AJAX.fireOnload('page_settings.js');
+      AJAX.fireOnload('drag_drop_import.js');
+      AJAX.fireOnload('shortcuts_handler.js');
+                    AJAX.fireOnload('console.js');
+  });
+// ]]>
+</script>
+
+  <noscript><style>html{display:block}</style></noscript>
+<script type="text/javascript" src="./checkpoint gmd_files/structure.js.télécharger"></script><script type="text/javascript" src="./checkpoint gmd_files/change.js.télécharger"></script><script type="text/javascript" src="./checkpoint gmd_files/makegrid.js.télécharger"></script><script type="text/javascript" src="./checkpoint gmd_files/jquery.uitablefilter.js.télécharger"></script><script type="text/javascript" src="./checkpoint gmd_files/stickyfill.min.js.télécharger"></script><script type="text/javascript" src="./checkpoint gmd_files/sql.js(1).télécharger"></script><script type="text/javascript" src="./checkpoint gmd_files/gis_data_editor.js.télécharger"></script><script type="text/javascript" src="./checkpoint gmd_files/multi_column_sort.js.télécharger"></script><script type="text/javascript" src="./checkpoint gmd_files/structure.js(1).télécharger"></script></head>
+<body style="margin-bottom: 20.9943px; margin-left: 240px; padding-top: 59.2292px;">
+    <div id="pma_navigation" data-config-navigation-width="240" style="width: 240px;">
+    <div id="pma_navigation_resizer" style="left: 240px; width: 3px;"></div>
+    <div id="pma_navigation_collapser" title="Hide panel" _msttexthash="781872" _msthash="1" style="left: 240px;">←</div>
+    <div id="pma_navigation_content">
+      <div id="pma_navigation_header">
+
+                  <div id="pmalogo">
+                          <a href="http://localhost/phpMyAdmin/index.php">
+                                      <img id="imgpmalogo" src="./checkpoint gmd_files/logo_left.png" alt="phpMyAdmin" _mstalt="151658" _msthash="2">
+                                      </a>
+                      </div>
+        
+        <div id="navipanellinks">
+          <a href="http://localhost/phpMyAdmin/index.php?route=/" title="Home"><img src="./checkpoint gmd_files/dot.gif" title="Home" alt="Domicile" class="icon ic_b_home" _mstalt="43979" _msthash="3"></a>
+
+                      <a class="logout disableAjax" href="http://localhost/phpMyAdmin/index.php?route=/logout" title="Empty session data"><img src="./checkpoint gmd_files/dot.gif" title="Empty session data" alt="Données de session vides" class="icon ic_s_loggoff" _mstalt="322907" _msthash="4"></a>
+          
+          <a href="http://localhost/phpMyAdmin/doc/html/index.html" title="phpMyAdmin documentation" target="_blank" rel="noopener noreferrer"><img src="./checkpoint gmd_files/dot.gif" title="phpMyAdmin documentation" alt="Documentation phpMyAdmin" class="icon ic_b_docs" _mstalt="571792" _msthash="5"></a>
+
+          <a href="http://localhost/phpMyAdmin/url.php?url=https%3A%2F%2Fdev.mysql.com%2Fdoc%2Frefman%2F5.7%2Fen%2Findex.html" title="MySQL Documentation" target="_blank" rel="noopener noreferrer"><img src="./checkpoint gmd_files/dot.gif" title="MySQL Documentation" alt="MySQL Documentation" class="icon ic_b_sqlhelp" _mstalt="374712" _msthash="6"></a>
+
+          <a id="pma_navigation_settings_icon" href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;db=gmcode#" title="Navigation panel settings"><img src="./checkpoint gmd_files/dot.gif" title="Navigation panel settings" alt="Paramètres du panneau de navigation" class="icon ic_s_cog" _mstalt="580034" _msthash="7"></a>
+
+          <a id="pma_navigation_reload" href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;db=gmcode#" title="Reload navigation panel"><img src="./checkpoint gmd_files/dot.gif" title="Reload navigation panel" alt="Recharger le panneau de navigation" class="icon ic_s_reload" _mstalt="490321" _msthash="8"></a>
+        </div>
+
+        
+        <img src="./checkpoint gmd_files/dot.gif" title="Loading…" alt="Loading…" style="visibility: hidden; display:none" class="icon ic_ajax_clock_small throbber" _msthidden="A" _mstalt="1590251" _msthash="9">
+      </div>
+      <div id="pma_navigation_tree" class="list_container synced highlight autoexpand" style="height: 857.77px;">
+  <div class="pma_quick_warp"><div class="drop_list"><button title="Recent tables" class="drop_button btn" _msttexthash="90233" _msthash="3806">Récent</button><ul id="pma_recent_list" _msthidden="9"><li class="warp_link" _msthidden="1"><a href="http://localhost/phpMyAdmin/index.php?route=/table/recent-favorite&amp;db=gmcode&amp;table=orders" _msttexthash="334906" _msthidden="1" _msthash="3807">`gmcode`.`orders`</a></li><li class="warp_link" _msthidden="1"><a href="http://localhost/phpMyAdmin/index.php?route=/table/recent-favorite&amp;db=gmcode&amp;table=product" _msttexthash="369759" _msthidden="1" _msthash="3808">`gmcode`.`product`</a></li><li class="warp_link" _msthidden="1"><a href="http://localhost/phpMyAdmin/index.php?route=/table/recent-favorite&amp;db=gmcode&amp;table=customer" _msttexthash="406289" _msthidden="1" _msthash="3809">`gmcode`.`customer`</a></li><li class="warp_link" _msthidden="1"><a href="http://localhost/phpMyAdmin/index.php?route=/table/recent-favorite&amp;db=td+gmycode&amp;table=costumer" _msttexthash="518128" _msthidden="1" _msthash="3810">`td gmycode`.`costumer`</a></li><li class="warp_link" _msthidden="1"><a href="http://localhost/phpMyAdmin/index.php?route=/table/recent-favorite&amp;db=td+gmycode&amp;table=customer" _msttexthash="517894" _msthidden="1" _msthash="3811">`td gmycode`.`customer`</a></li><li class="warp_link" _msthidden="1"><a href="http://localhost/phpMyAdmin/index.php?route=/table/recent-favorite&amp;db=doowar&amp;table=emprunteur" _msttexthash="489359" _msthidden="1" _msthash="3812">`doowar`.`emprunteur`</a></li><li class="warp_link" _msthidden="1"><a href="http://localhost/phpMyAdmin/index.php?route=/table/recent-favorite&amp;db=doowar&amp;table=emprunt" _msttexthash="377546" _msthidden="1" _msthash="3813">`doowar`.`emprunt`</a></li><li class="warp_link" _msthidden="1"><a href="http://localhost/phpMyAdmin/index.php?route=/table/recent-favorite&amp;db=doowar&amp;table=reference" _msttexthash="433719" _msthidden="1" _msthash="3814">`doowar`.`reference`</a></li><li class="warp_link" _msthidden="1"><a href="http://localhost/phpMyAdmin/index.php?route=/table/recent-favorite&amp;db=doowar&amp;table=livre" _msttexthash="306631" _msthidden="1" _msthash="3815">`doowar`.`livre`</a></li></ul></div><div class="drop_list"><button title="Favorite tables" class="drop_button btn" _msttexthash="96811" _msthash="3816">Favoris</button><ul id="pma_favorite_list" _msthidden="1"><li class="warp_link" _msttexthash="633113" _msthidden="1" _msthash="3817">There are no favorite tables.</li></ul></div><div class="clearfloat"></div></div>
+
+<div class="clearfloat"></div>
+
+<ul>
+  
+  <!-- CONTROLS START --><li id="navigation_controls_outer"><div id="navigation_controls"><a href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;db=gmcode#" id="pma_navigation_collapse" title="Collapse all"><img src="./checkpoint gmd_files/dot.gif" title="Collapse all" alt="Tout réduire" class="icon ic_s_collapseall" _mstalt="178724" _msthash="3804"></a><a href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;db=gmcode#" id="pma_navigation_sync" title="Unlink from main panel"><img src="./checkpoint gmd_files/dot.gif" title="Unlink from main panel" alt="Dissocier du panneau principal" class="icon ic_s_link" _mstalt="419328" _msthash="3805"></a></div></li><!-- CONTROLS ENDS -->
+</ul>
+
+
+
+<div id="pma_navigation_tree_content" style="height: 803.026px;">
+  <ul>
+    <li class="first new_database italics"><div class="block"><i class="first"></i></div><div class="block second"><a href="http://localhost/phpMyAdmin/index.php?route=/server/databases&amp;server=1"><img src="./checkpoint gmd_files/dot.gif" title="" alt="" class="icon ic_b_newdb"></a></div><a class="hover_show_full" href="http://localhost/phpMyAdmin/index.php?route=/server/databases&amp;server=1" title="New" _msttexthash="97019" _msthash="3769">Nouveau</a><div class="clearfloat"></div></li><li class="database"><div class="block"><i></i><b></b><a class="expander" href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;db=gmcode#"><span class="hide paths_nav" data-apath="cm9vdA==.ZG9vd2Fy" data-vpath="cm9vdA==.ZG9vd2Fy" data-pos="0"></span><img src="./checkpoint gmd_files/dot.gif" title="Expand/Collapse" alt="Développer/Réduire" class="icon ic_b_plus" _mstalt="271752" _msthash="3770"></a></div><div class="block second"><a href="http://localhost/phpMyAdmin/index.php?route=/database/operations&amp;server=1&amp;db=doowar&amp;"><img src="./checkpoint gmd_files/dot.gif" title="Database operations" alt="Opérations de base de données" class="icon ic_s_db" _mstalt="386659" _msthash="3771"></a></div><a class="hover_show_full" href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;server=1&amp;db=doowar" title="Structure" _msttexthash="77844" _msthash="3772">Doowar</a><div class="clearfloat"></div></li><li class="database selected"><div class="block"><i></i><b></b><a class="expander loaded" href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;db=gmcode#"><span class="hide paths_nav" data-apath="cm9vdA==.Z21jb2Rl" data-vpath="cm9vdA==.Z21jb2Rl" data-pos="0"></span><img src="./checkpoint gmd_files/dot.gif" title="" alt="" class="icon ic_b_minus"></a></div><div class="block second"><a href="http://localhost/phpMyAdmin/index.php?route=/database/operations&amp;server=1&amp;db=gmcode&amp;"><img src="./checkpoint gmd_files/dot.gif" title="Database operations" alt="Opérations de base de données" class="icon ic_s_db" _mstalt="386659" _msthash="3773"></a></div><a class="hover_show_full" href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;server=1&amp;db=gmcode" title="Structure" _msttexthash="76778" _msthash="3774">gmcode</a><div class="clearfloat"></div><div class="list_container"><ul><span class="hide pos2_nav" data-name="tables" data-value="0" "=""></span><li class="new_table italics new_table italics"><div class="block"><i></i><span class="hide pos2_nav" data-name="tables" data-value="0" "=""></span></div><div class="block second"><a href="http://localhost/phpMyAdmin/index.php?route=/table/create&amp;server=1&amp;db=gmcode"><img src="./checkpoint gmd_files/dot.gif" title="New" alt="Nouveau" class="icon ic_b_table_add" _mstalt="31525" _msthash="3775"></a></div><a class="hover_show_full" href="http://localhost/phpMyAdmin/index.php?route=/table/create&amp;server=1&amp;db=gmcode" title="New" _msttexthash="97019" _msthash="3776">Nouveau</a><div class="clearfloat"></div></li><li class="table table"><div class="block"><i></i><b></b><a class="expander" href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;db=gmcode#"><span class="hide paths_nav" data-apath="cm9vdA==.Z21jb2Rl.dGFibGVz.Y3VzdG9tZXI=" data-vpath="cm9vdA==.Z21jb2Rl.VGFibGVz.Y3VzdG9tZXI=" data-pos="0"></span><span class="hide pos2_nav" data-name="tables" data-value="0" "=""></span><img src="./checkpoint gmd_files/dot.gif" title="Expand/Collapse" alt="Développer/Réduire" class="icon ic_b_plus" _mstalt="271752" _msthash="3777"></a></div><div class="block second"><a href="http://localhost/phpMyAdmin/index.php?route=/table/structure&amp;server=1&amp;db=gmcode&amp;table=customer"><img src="./checkpoint gmd_files/dot.gif" title="Structure" alt="Structure" class="icon ic_b_props" _mstalt="140634" _msthash="3778"></a></div><a class="hover_show_full" href="http://localhost/phpMyAdmin/index.php?route=/sql&amp;server=1&amp;db=gmcode&amp;table=customer&amp;pos=0" title="Browse" _msttexthash="79482" _msthash="3779">client</a><div class="clearfloat"></div></li><li class="table table"><div class="block"><i></i><b></b><a class="expander" href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;db=gmcode#"><span class="hide paths_nav" data-apath="cm9vdA==.Z21jb2Rl.dGFibGVz.b3JkZXJz" data-vpath="cm9vdA==.Z21jb2Rl.VGFibGVz.b3JkZXJz" data-pos="0"></span><span class="hide pos2_nav" data-name="tables" data-value="0" "=""></span><img src="./checkpoint gmd_files/dot.gif" title="Expand/Collapse" alt="Développer/Réduire" class="icon ic_b_plus" _mstalt="271752" _msthash="3780"></a></div><div class="block second"><a href="http://localhost/phpMyAdmin/index.php?route=/table/structure&amp;server=1&amp;db=gmcode&amp;table=orders"><img src="./checkpoint gmd_files/dot.gif" title="Structure" alt="Structure" class="icon ic_b_props" _mstalt="140634" _msthash="3781"></a></div><a class="hover_show_full" href="http://localhost/phpMyAdmin/index.php?route=/sql&amp;server=1&amp;db=gmcode&amp;table=orders&amp;pos=0" title="Browse" _msttexthash="80860" _msthash="3782">ordres</a><div class="clearfloat"></div></li><li class="table last table"><div class="block"><i></i><a class="expander" href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;db=gmcode#"><span class="hide paths_nav" data-apath="cm9vdA==.Z21jb2Rl.dGFibGVz.cHJvZHVjdA==" data-vpath="cm9vdA==.Z21jb2Rl.VGFibGVz.cHJvZHVjdA==" data-pos="0"></span><span class="hide pos2_nav" data-name="tables" data-value="0" "=""></span><img src="./checkpoint gmd_files/dot.gif" title="Expand/Collapse" alt="Développer/Réduire" class="icon ic_b_plus" _mstalt="271752" _msthash="3783"></a></div><div class="block second"><a href="http://localhost/phpMyAdmin/index.php?route=/table/structure&amp;server=1&amp;db=gmcode&amp;table=product"><img src="./checkpoint gmd_files/dot.gif" title="Structure" alt="Structure" class="icon ic_b_props" _mstalt="140634" _msthash="3784"></a></div><a class="hover_show_full" href="http://localhost/phpMyAdmin/index.php?route=/sql&amp;server=1&amp;db=gmcode&amp;table=product&amp;pos=0" title="Browse" _msttexthash="100750" _msthash="3785">produit</a><div class="clearfloat"></div></li></ul></div></li><li class="database"><div class="block"><i></i><b></b><a class="expander" href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;db=gmcode#"><span class="hide paths_nav" data-apath="cm9vdA==.aW5mb3JtYXRpb25fc2NoZW1h" data-vpath="cm9vdA==.aW5mb3JtYXRpb25fc2NoZW1h" data-pos="0"></span><img src="./checkpoint gmd_files/dot.gif" title="Expand/Collapse" alt="Développer/Réduire" class="icon ic_b_plus" _mstalt="271752" _msthash="3786"></a></div><div class="block second"><a href="http://localhost/phpMyAdmin/index.php?route=/database/operations&amp;server=1&amp;db=information_schema&amp;"><img src="./checkpoint gmd_files/dot.gif" title="Database operations" alt="Opérations de base de données" class="icon ic_s_db" _mstalt="386659" _msthash="3787"></a></div><a class="hover_show_full" href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;server=1&amp;db=information_schema" title="Structure" _msttexthash="382551" _msthash="3788">information_schema</a><div class="clearfloat"></div></li><li class="database"><div class="block"><i></i><b></b><a class="expander" href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;db=gmcode#"><span class="hide paths_nav" data-apath="cm9vdA==.bXlzcWw=" data-vpath="cm9vdA==.bXlzcWw=" data-pos="0"></span><img src="./checkpoint gmd_files/dot.gif" title="Expand/Collapse" alt="Développer/Réduire" class="icon ic_b_plus" _mstalt="271752" _msthash="3789"></a></div><div class="block second"><a href="http://localhost/phpMyAdmin/index.php?route=/database/operations&amp;server=1&amp;db=mysql&amp;"><img src="./checkpoint gmd_files/dot.gif" title="Database operations" alt="Opérations de base de données" class="icon ic_s_db" _mstalt="386659" _msthash="3790"></a></div><a class="hover_show_full" href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;server=1&amp;db=mysql" title="Structure" _msttexthash="66092" _msthash="3791">mysql</a><div class="clearfloat"></div></li><li class="database"><div class="block"><i></i><b></b><a class="expander" href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;db=gmcode#"><span class="hide paths_nav" data-apath="cm9vdA==.cGVyZm9ybWFuY2Vfc2NoZW1h" data-vpath="cm9vdA==.cGVyZm9ybWFuY2Vfc2NoZW1h" data-pos="0"></span><img src="./checkpoint gmd_files/dot.gif" title="Expand/Collapse" alt="Développer/Réduire" class="icon ic_b_plus" _mstalt="271752" _msthash="3792"></a></div><div class="block second"><a href="http://localhost/phpMyAdmin/index.php?route=/database/operations&amp;server=1&amp;db=performance_schema&amp;"><img src="./checkpoint gmd_files/dot.gif" title="Database operations" alt="Opérations de base de données" class="icon ic_s_db" _mstalt="386659" _msthash="3793"></a></div><a class="hover_show_full" href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;server=1&amp;db=performance_schema" title="Structure" _msttexthash="377897" _msthash="3794">performance_schema</a><div class="clearfloat"></div></li><li class="database"><div class="block"><i></i><b></b><a class="expander" href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;db=gmcode#"><span class="hide paths_nav" data-apath="cm9vdA==.c3lz" data-vpath="cm9vdA==.c3lz" data-pos="0"></span><img src="./checkpoint gmd_files/dot.gif" title="Expand/Collapse" alt="Développer/Réduire" class="icon ic_b_plus" _mstalt="271752" _msthash="3795"></a></div><div class="block second"><a href="http://localhost/phpMyAdmin/index.php?route=/database/operations&amp;server=1&amp;db=sys&amp;"><img src="./checkpoint gmd_files/dot.gif" title="Database operations" alt="Opérations de base de données" class="icon ic_s_db" _mstalt="386659" _msthash="3796"></a></div><a class="hover_show_full" href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;server=1&amp;db=sys" title="Structure" _msttexthash="45253" _msthash="3797">.sys</a><div class="clearfloat"></div></li><li class="database"><div class="block"><i></i><b></b><a class="expander" href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;db=gmcode#"><span class="hide paths_nav" data-apath="cm9vdA==.dGQgZ215Y29kZQ==" data-vpath="cm9vdA==.dGQgZ215Y29kZQ==" data-pos="0"></span><img src="./checkpoint gmd_files/dot.gif" title="Expand/Collapse" alt="Développer/Réduire" class="icon ic_b_plus" _mstalt="271752" _msthash="3798"></a></div><div class="block second"><a href="http://localhost/phpMyAdmin/index.php?route=/database/operations&amp;server=1&amp;db=td+gmycode&amp;"><img src="./checkpoint gmd_files/dot.gif" title="Database operations" alt="Opérations de base de données" class="icon ic_s_db" _mstalt="386659" _msthash="3799"></a></div><a class="hover_show_full" href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;server=1&amp;db=td+gmycode" title="Structure" _msttexthash="126594" _msthash="3800">TD Gmycode</a><div class="clearfloat"></div></li><li class="last database"><div class="block"><i></i><a class="expander" href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;db=gmcode#"><span class="hide paths_nav" data-apath="cm9vdA==.dHJhdmF1eA==" data-vpath="cm9vdA==.dHJhdmF1eA==" data-pos="0"></span><img src="./checkpoint gmd_files/dot.gif" title="Expand/Collapse" alt="Développer/Réduire" class="icon ic_b_plus" _mstalt="271752" _msthash="3801"></a></div><div class="block second"><a href="http://localhost/phpMyAdmin/index.php?route=/database/operations&amp;server=1&amp;db=travaux&amp;"><img src="./checkpoint gmd_files/dot.gif" title="Database operations" alt="Opérations de base de données" class="icon ic_s_db" _mstalt="386659" _msthash="3802"></a></div><a class="hover_show_full" href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;server=1&amp;db=travaux" title="Structure" _msttexthash="101504" _msthash="3803">travaux</a><div class="clearfloat"></div></li>
+  </ul>
+</div>
+
+
+</div>
+
+      <div id="pma_navi_settings_container" _msthidden="107">
+                  
+              </div>
+    </div>
+
+          <div class="pma_drop_handler" _msttexthash="231192" _msthidden="1" _msthash="156">
+        Drop files here      </div>
+      <div class="pma_sql_import_status" _msthidden="2">
+        <h2 _msthidden="2"><font _mstmutation="1" _msttexthash="147784" _msthidden="1" _msthash="157">
+          SQL upload          ( <span class="pma_import_count" _mstmutation="1">0</span></font> )
+          <span class="close" _msttexthash="10920" _msthidden="1" _msthash="158">x</span>
+          <span class="minimize">-</span>
+        </h2>
+        <div></div>
+      </div>
+      </div>
+
+  
+  
+
+  
+      
+  
+      <div id="floating_menubar" style="margin-left: 243px; left: 0px; position: fixed; top: 0px; width: 100%; z-index: 99;">
+<nav id="server-breadcrumb" aria-label="chapelure" _mstaria-label="157144" _msthash="3916">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item">
+      <img src="./checkpoint gmd_files/dot.gif" title="" alt="" class="icon ic_s_host">
+      <a href="http://localhost/phpMyAdmin/index.php?route=/" data-raw-text="localhost:3306" _msttexthash="437983" _msthash="4058"> Serveur : localhost:3306 </a>
+    </li>
+
+          <li class="breadcrumb-item">
+        <img src="./checkpoint gmd_files/dot.gif" title="" alt="" class="icon ic_s_db">
+        <a href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;db=gmcode" data-raw-text="gmcode" _msttexthash="462943" _msthash="4059"> Base de données: gmcode </a>
+      </li>
+
+            </ol>
+</nav>
+<div id="topmenucontainer" class="menucontainer">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-label="Toggle navigation" aria-controls="navbarNav" aria-expanded="false" _msthidden="A" _mstaria-label="320099" _msthash="4032">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav" style="width: auto; overflow: visible;">
+      <ul id="topmenu" class="navbar-nav">
+                  <li class="nav-item active">
+            <a class="nav-link text-nowrap" href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;db=gmcode">
+              <img src="./checkpoint gmd_files/dot.gif" title="Structure" alt="Structure" class="icon ic_b_props" _mstalt="140634" _msthash="4033"><font _mstmutation="1" _msttexthash="140634" _msthash="4034">&nbsp;Structure
+                              </font><span class="sr-only" _msttexthash="122200" _msthash="4035">(current)</span>
+                          </a>
+          </li>
+                  <li class="nav-item">
+            <a class="nav-link text-nowrap" href="http://localhost/phpMyAdmin/index.php?route=/database/sql&amp;db=gmcode">
+              <img src="./checkpoint gmd_files/dot.gif" title="SQL" alt=".SQL" class="icon ic_b_sql" _mstalt="24869" _msthash="4036"><font _mstmutation="1" _msttexthash="32175" _msthash="4037"> .SQL </font></a>
+          </li>
+                  <li class="nav-item">
+            <a class="nav-link text-nowrap" href="http://localhost/phpMyAdmin/index.php?route=/database/search&amp;db=gmcode">
+              <img src="./checkpoint gmd_files/dot.gif" title="Search" alt="Rechercher" class="icon ic_b_search" _mstalt="74607" _msthash="4038"><font _mstmutation="1" _msttexthash="154362" _msthash="4039"> Rechercher </font></a>
+          </li>
+                  <li class="nav-item">
+            <a class="nav-link text-nowrap" href="http://localhost/phpMyAdmin/index.php?route=/database/multi-table-query&amp;db=gmcode">
+              <img src="./checkpoint gmd_files/dot.gif" title="Query" alt="Requête" class="icon ic_s_db" _mstalt="63479" _msthash="4040"><font _mstmutation="1" _msttexthash="115024" _msthash="4041"> Requête </font></a>
+          </li>
+                  <li class="nav-item">
+            <a class="nav-link text-nowrap" href="http://localhost/phpMyAdmin/index.php?route=/database/export&amp;db=gmcode">
+              <img src="./checkpoint gmd_files/dot.gif" title="Export" alt="Exportation" class="icon ic_b_export" _mstalt="80691" _msthash="4042"><font _mstmutation="1" _msttexthash="186069" _msthash="4043"> Exportation </font></a>
+          </li>
+                  <li class="nav-item">
+            <a class="nav-link text-nowrap" href="http://localhost/phpMyAdmin/index.php?route=/database/import&amp;db=gmcode">
+              <img src="./checkpoint gmd_files/dot.gif" title="Import" alt="Importation" class="icon ic_b_import" _mstalt="79911" _msthash="4044"><font _mstmutation="1" _msttexthash="185289" _msthash="4045"> Importation </font></a>
+          </li>
+                  <li class="nav-item">
+            <a class="nav-link text-nowrap" href="http://localhost/phpMyAdmin/index.php?route=/database/operations&amp;db=gmcode">
+              <img src="./checkpoint gmd_files/dot.gif" title="Operations" alt="Opérations" class="icon ic_b_tblops" _mstalt="160758" _msthash="4046"><font _mstmutation="1" _msttexthash="176202" _msthash="4047"> Opérations </font></a>
+          </li>
+                  <li class="nav-item">
+            <a class="nav-link text-nowrap" href="http://localhost/phpMyAdmin/index.php?route=/server/privileges&amp;db=gmcode&amp;checkprivsdb=gmcode&amp;viewing_mode=db">
+              <img src="./checkpoint gmd_files/dot.gif" title="Privileges" alt="Privilèges" class="icon ic_s_rights" _mstalt="158054" _msthash="4048"><font _mstmutation="1" _msttexthash="180193" _msthash="4049"> Privilèges </font></a>
+          </li>
+                  <li class="nav-item">
+            <a class="nav-link text-nowrap" href="http://localhost/phpMyAdmin/index.php?route=/database/routines&amp;db=gmcode">
+              <img src="./checkpoint gmd_files/dot.gif" title="Routines" alt="Routines" class="icon ic_b_routines" _mstalt="117949" _msthash="4050"><font _mstmutation="1" _msttexthash="117949" _msthash="4051">&nbsp;Routines
+                          </font></a>
+          </li>
+                  <li class="nav-item">
+            <a class="nav-link text-nowrap" href="http://localhost/phpMyAdmin/index.php?route=/database/events&amp;db=gmcode">
+              <img src="./checkpoint gmd_files/dot.gif" title="Events" alt="Épreuves" class="icon ic_b_events" _mstalt="79196" _msthash="4052"><font _mstmutation="1" _msttexthash="129545" _msthash="4053"> Épreuves </font></a>
+          </li>
+                  <li class="nav-item">
+            <a class="nav-link text-nowrap" href="http://localhost/phpMyAdmin/index.php?route=/database/triggers&amp;db=gmcode">
+              <img src="./checkpoint gmd_files/dot.gif" title="Triggers" alt="Déclenche" class="icon ic_b_triggers" _mstalt="115856" _msthash="4054"><font _mstmutation="1" _msttexthash="143000" _msthash="4055"> Déclenche </font></a>
+          </li>
+                  
+              <li class="nav-item" _mstvisible="2" _msthidden="1">
+            <a class="nav-link text-nowrap" href="http://localhost/phpMyAdmin/index.php?route=/database/designer&amp;db=gmcode" _mstvisible="3" _msthidden="1">
+              <img src="./checkpoint gmd_files/dot.gif" title="Designer" alt="Concepteur" class="icon ic_b_relations" _mstalt="159809" _msthash="4056" _mstvisible="4" _msthidden="A"><font _mstmutation="1" _msttexthash="159809" _msthash="4057" _mstvisible="4"> Concepteur </font></a>
+          </li><li class="nav-item dropdown d-none" style="" _mstvisible="0"><a href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;db=gmcode#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" _mstvisible="1"><img alt="" title="" src="./checkpoint gmd_files/dot.gif" class="icon ic_b_more" _mstvisible="2"><font _mstmutation="1" _msttexthash="47151" _msthash="4031" _mstvisible="2">Plus</font></a><ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown" _mstvisible="1"></ul></li></ul>
+    </div>
+  </nav>
+</div>
+</div>
+
+
+
+    <span id="page_nav_icons">
+      <span id="lock_page_icon"></span>
+      <span id="page_settings_icon" style="display: inline;" _mstvisible="0">
+        <img src="./checkpoint gmd_files/dot.gif" title="Page-related settings" alt="Paramètres liés à la page" class="icon ic_s_cog" _mstalt="572728" _msthash="187" _mstvisible="1">
+      </span>
+      <a id="goto_pagetop" href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;db=gmcode#"><img src="./checkpoint gmd_files/dot.gif" title="Click on the bar to scroll to top of page" alt="Cliquez sur la barre pour faire défiler vers le haut de la page" class="icon ic_s_top" _mstalt="2309593" _msthash="188"></a>
+    </span>
+  
+  <div id="pma_console_container">
+    <div id="pma_console" style="margin-left: 243px;">
+                <div class="toolbar collapsed">
+                    <div class="switch_button console_switch">
+            <img src="./checkpoint gmd_files/dot.gif" title="SQL Query Console" alt="Console de requête SQL" class="icon ic_console" _mstalt="279617" _msthash="189">
+            <span _msttexthash="115999" _msthash="190">Consoler</span>
+        </div>
+                            <div class="button clear" _msthidden="1">
+            
+            <span _msttexthash="58058" _msthidden="1" _msthash="191">Clear</span>
+        </div>
+                            <div class="button history" _msthidden="1">
+            
+            <span _msttexthash="100113" _msthidden="1" _msthash="192">History</span>
+        </div>
+                            <div class="button options" _msthidden="1">
+            
+            <span _msttexthash="98527" _msthidden="1" _msthash="193">Options</span>
+        </div>
+                            <div class="button bookmarks" _msthidden="1">
+            
+            <span _msttexthash="136331" _msthidden="1" _msthash="194">Bookmarks</span>
+        </div>
+                            <div class="button debug hide" _msthidden="1">
+            
+            <span _msttexthash="98566" _msthidden="1" _msthash="195">Debug SQL</span>
+        </div>
+            </div>
+                <div class="content" style="height: 97.9147px; margin-bottom: -97.9062px; display: none;">
+            <div class="console_message_container">
+                <div class="message welcome binded">
+                    <span id="instructions-0" _msttexthash="1784445" _msthash="196"> Appuyez sur Ctrl+Entrée pour exécuter la requête </span>
+                    <span class="hide" id="instructions-1" _msttexthash="630058" _msthidden="1" _msthash="197">
+                        Press Enter to execute query                    </span>
+                </div>
+                            <div class="message collapsed binded select successed" msgid="578091490059" targetdb="gmcode" targettable="customer" _msthidden="10"><div class="action_content" _msthidden="9">
+                    <span class="action collapse" _msttexthash="113477" _msthidden="1" _msthash="219">
+            Collapse
+                    </span>
+                            <font _mstmutation="1" _msttexthash="4127292" _msthidden="9" _msthash="220"><span class="action expand" _mstmutation="1" _msttexthash="75803" _msthidden="1" _msthash="1553">
+            Expand
+                    </span>
+                            <span class="action requery" _mstmutation="1" _msttexthash="99073" _msthidden="1" _msthash="1554">
+            Requery
+                    </span>
+                            <span class="action edit" _mstmutation="1" _msttexthash="44044" _msthidden="1" _msthash="1555">
+            Edit
+                    </span>
+                            <span class="action explain" _mstmutation="1" _msttexthash="94744" _msthidden="1" _msthash="1556">
+            Explain
+                    </span>
+                            <span class="action profiling" _mstmutation="1" _msttexthash="135096" _msthidden="1" _msthash="1557">
+            Profiling
+                    </span>
+                            <span class="action bookmark" _mstmutation="1" _msttexthash="113906" _msthidden="1" _msthash="1558">
+            Bookmark
+                    </span>
+                            <span class="text failed" _mstmutation="1" _msttexthash="179062" _msthidden="1" _msthash="1559">
+            Query failed
+                    </span>
+                            <span class="text targetdb" _mstmutation="1" _msthidden="1"><font _mstmutation="1" _msttexthash="270400" _msthidden="1" _msthash="1560">
+            Database
+                            : <span _mstmutation="1">gmcode</span></font>
+                    </span>
+                            <span class="text query_time" _mstmutation="1" title="Wed Mar 29 2023 09:41:05 GMT+0000 (heure moyenne de Greenwich)" _msthidden="1"><font _mstmutation="1" _msttexthash="285246" _msthidden="1" _msthash="1561">
+            Queried time
+                            : <span _mstmutation="1">9:41:5</span></font>
+                    </span></font>
+            </div><div class="query highlighted" _msthidden="1"><font _mstmutation="1" _msttexthash="405015" _msthidden="1" _msthash="1562"><span class="cm-keyword" _mstmutation="1">SELECT</span> <span class="cm-operator" _mstmutation="1">*</span> <span class="cm-keyword" _mstmutation="1">FROM</span> `customer</font>`</div></div><div class="message collapsed binded successed" msgid="842939451166" _msthidden="10"><div class="action_content" _msthidden="9">
+                    <span class="action collapse" _msttexthash="113477" _msthidden="1" _msthash="219">
+            Collapse
+                    </span>
+                            <font _mstmutation="1" _msttexthash="4127292" _msthidden="9" _msthash="220"><span class="action expand" _mstmutation="1" _msttexthash="75803" _msthidden="1" _msthash="2267">
+            Expand
+                    </span>
+                            <span class="action requery" _mstmutation="1" _msttexthash="99073" _msthidden="1" _msthash="2268">
+            Requery
+                    </span>
+                            <span class="action edit" _mstmutation="1" _msttexthash="44044" _msthidden="1" _msthash="2269">
+            Edit
+                    </span>
+                            <span class="action explain" _mstmutation="1" _msttexthash="94744" _msthidden="1" _msthash="2270">
+            Explain
+                    </span>
+                            <span class="action profiling" _mstmutation="1" _msttexthash="135096" _msthidden="1" _msthash="2271">
+            Profiling
+                    </span>
+                            <span class="action bookmark" _mstmutation="1" _msttexthash="113906" _msthidden="1" _msthash="2272">
+            Bookmark
+                    </span>
+                            <span class="text failed" _mstmutation="1" _msttexthash="179062" _msthidden="1" _msthash="2273">
+            Query failed
+                    </span>
+                            <span class="text targetdb" _mstmutation="1" _msthidden="1"><font _mstmutation="1" _msttexthash="120731" _msthidden="1" _msthash="2274">
+            Database
+                            : </font><span></span>
+                    </span>
+                            <span class="text query_time" _mstmutation="1" title="Wed Mar 29 2023 09:41:39 GMT+0000 (heure moyenne de Greenwich)" _msthidden="1"><font _mstmutation="1" _msttexthash="303147" _msthidden="1" _msthash="2275">
+            Queried time
+                            : <span _mstmutation="1">9:41:39</span></font>
+                    </span></font>
+            </div><div class="query highlighted" _msthidden="1"><font _mstmutation="1" _msttexthash="6062602" _msthidden="1" _msthash="2276"><span class="cm-keyword" _mstmutation="1">alter</span> <span class="cm-keyword" _mstmutation="1">table</span> orders add CONSTRAINT fk_customer FOREIGN KEY <span class="cm-bracket" _mstmutation="1">(</span>id_customer<span class="cm-bracket" _mstmutation="1">)</span> REFERENCES customer <span class="cm-bracket" _mstmutation="1">(</span>id_customer</font><span class="cm-bracket">)</span><span class="cm-punctuation">;</span></div></div><div class="message collapsed binded select successed" msgid="905261974992" targetdb="gmcode" targettable="product" _msthidden="10"><div class="action_content" _msthidden="9">
+                    <span class="action collapse" _msttexthash="113477" _msthidden="1" _msthash="219">
+            Collapse
+                    </span>
+                            <font _mstmutation="1" _msttexthash="4127292" _msthidden="9" _msthash="220"><span class="action expand" _mstmutation="1" _msttexthash="75803" _msthidden="1" _msthash="2586">
+            Expand
+                    </span>
+                            <span class="action requery" _mstmutation="1" _msttexthash="99073" _msthidden="1" _msthash="2587">
+            Requery
+                    </span>
+                            <span class="action edit" _mstmutation="1" _msttexthash="44044" _msthidden="1" _msthash="2588">
+            Edit
+                    </span>
+                            <span class="action explain" _mstmutation="1" _msttexthash="94744" _msthidden="1" _msthash="2589">
+            Explain
+                    </span>
+                            <span class="action profiling" _mstmutation="1" _msttexthash="135096" _msthidden="1" _msthash="2590">
+            Profiling
+                    </span>
+                            <span class="action bookmark" _mstmutation="1" _msttexthash="113906" _msthidden="1" _msthash="2591">
+            Bookmark
+                    </span>
+                            <span class="text failed" _mstmutation="1" _msttexthash="179062" _msthidden="1" _msthash="2592">
+            Query failed
+                    </span>
+                            <span class="text targetdb" _mstmutation="1" _msthidden="1"><font _mstmutation="1" _msttexthash="270400" _msthidden="1" _msthash="2593">
+            Database
+                            : <span _mstmutation="1">gmcode</span></font>
+                    </span>
+                            <span class="text query_time" _mstmutation="1" title="Wed Mar 29 2023 09:43:56 GMT+0000 (heure moyenne de Greenwich)" _msthidden="1"><font _mstmutation="1" _msttexthash="303368" _msthidden="1" _msthash="2594">
+            Queried time
+                            : <span _mstmutation="1">9:43:56</span></font>
+                    </span></font>
+            </div><div class="query highlighted" _msthidden="1"><font _mstmutation="1" _msttexthash="366795" _msthidden="1" _msthash="2595"><span class="cm-keyword" _mstmutation="1">SELECT</span> <span class="cm-operator" _mstmutation="1">*</span> <span class="cm-keyword" _mstmutation="1">FROM</span> `product</font>`</div></div><div class="message collapsed binded select successed" msgid="304862948648" targetdb="gmcode" targettable="orders" _msthidden="10"><div class="action_content" _msthidden="9">
+                    <span class="action collapse" _msttexthash="113477" _msthidden="1" _msthash="219">
+            Collapse
+                    </span>
+                            <font _mstmutation="1" _msttexthash="4127292" _msthidden="9" _msthash="220"><span class="action expand" _mstmutation="1" _msttexthash="75803" _msthidden="1" _msthash="2975">
+            Expand
+                    </span>
+                            <span class="action requery" _mstmutation="1" _msttexthash="99073" _msthidden="1" _msthash="2976">
+            Requery
+                    </span>
+                            <span class="action edit" _mstmutation="1" _msttexthash="44044" _msthidden="1" _msthash="2977">
+            Edit
+                    </span>
+                            <span class="action explain" _mstmutation="1" _msttexthash="94744" _msthidden="1" _msthash="2978">
+            Explain
+                    </span>
+                            <span class="action profiling" _mstmutation="1" _msttexthash="135096" _msthidden="1" _msthash="2979">
+            Profiling
+                    </span>
+                            <span class="action bookmark" _mstmutation="1" _msttexthash="113906" _msthidden="1" _msthash="2980">
+            Bookmark
+                    </span>
+                            <span class="text failed" _mstmutation="1" _msttexthash="179062" _msthidden="1" _msthash="2981">
+            Query failed
+                    </span>
+                            <span class="text targetdb" _mstmutation="1" _msthidden="1"><font _mstmutation="1" _msttexthash="270400" _msthidden="1" _msthash="2982">
+            Database
+                            : <span _mstmutation="1">gmcode</span></font>
+                    </span>
+                            <span class="text query_time" _mstmutation="1" title="Wed Mar 29 2023 09:44:08 GMT+0000 (heure moyenne de Greenwich)" _msthidden="1"><font _mstmutation="1" _msttexthash="287040" _msthidden="1" _msthash="2983">
+            Queried time
+                            : <span _mstmutation="1">9:44:8</span></font>
+                    </span></font>
+            </div><div class="query highlighted" _msthidden="1"><font _mstmutation="1" _msttexthash="330226" _msthidden="1" _msthash="2984"><span class="cm-keyword" _mstmutation="1">SELECT</span> <span class="cm-operator" _mstmutation="1">*</span> <span class="cm-keyword" _mstmutation="1">FROM</span> `orders</font>`</div></div><div class="message collapsed binded successed" msgid="921010868038" _msthidden="10"><div class="action_content" _msthidden="9">
+                    <span class="action collapse" _msttexthash="113477" _msthidden="1" _msthash="219">
+            Collapse
+                    </span>
+                            <font _mstmutation="1" _msttexthash="4127292" _msthidden="9" _msthash="220"><span class="action expand" _mstmutation="1" _msttexthash="75803" _msthidden="1" _msthash="3728">
+            Expand
+                    </span>
+                            <span class="action requery" _mstmutation="1" _msttexthash="99073" _msthidden="1" _msthash="3729">
+            Requery
+                    </span>
+                            <span class="action edit" _mstmutation="1" _msttexthash="44044" _msthidden="1" _msthash="3730">
+            Edit
+                    </span>
+                            <span class="action explain" _mstmutation="1" _msttexthash="94744" _msthidden="1" _msthash="3731">
+            Explain
+                    </span>
+                            <span class="action profiling" _mstmutation="1" _msttexthash="135096" _msthidden="1" _msthash="3732">
+            Profiling
+                    </span>
+                            <span class="action bookmark" _mstmutation="1" _msttexthash="113906" _msthidden="1" _msthash="3733">
+            Bookmark
+                    </span>
+                            <span class="text failed" _mstmutation="1" _msttexthash="179062" _msthidden="1" _msthash="3734">
+            Query failed
+                    </span>
+                            <span class="text targetdb" _mstmutation="1" _msthidden="1"><font _mstmutation="1" _msttexthash="120731" _msthidden="1" _msthash="3735">
+            Database
+                            : </font><span></span>
+                    </span>
+                            <span class="text query_time" _mstmutation="1" title="Wed Mar 29 2023 09:46:21 GMT+0000 (heure moyenne de Greenwich)" _msthidden="1"><font _mstmutation="1" _msttexthash="301665" _msthidden="1" _msthash="3736">
+            Queried time
+                            : <span _mstmutation="1">9:46:21</span></font>
+                    </span></font>
+            </div><div class="query highlighted" _msthidden="1"><font _mstmutation="1" _msttexthash="5509075" _msthidden="1" _msthash="3737"><span class="cm-keyword" _mstmutation="1">alter</span> <span class="cm-keyword" _mstmutation="1">table</span> orders add CONSTRAINT fk_product FOREIGN KEY <span class="cm-bracket" _mstmutation="1">(</span>product_id<span class="cm-bracket" _mstmutation="1">)</span> REFERENCES product <span class="cm-bracket" _mstmutation="1">(</span>product_id</font><span class="cm-bracket">)</span><span class="cm-punctuation">;</span></div></div></div><!-- console_message_container -->
+            <div class="query_input">
+                <span class="console_query_input"><div class="CodeMirror cm-s-pma CodeMirror-wrap" translate="no"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 16px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; min-height: 1em; outline: none;"></textarea></div><div class="CodeMirror-vscrollbar" tabindex="-1" cm-not-content="true"><div style="min-width: 1px; height: 0px;"></div></div><div class="CodeMirror-hscrollbar" tabindex="-1" cm-not-content="true"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 16px; margin-bottom: -11px; border-right-width: 39px; min-height: 20px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><span _msttexthash="10920" _msthash="607"><span _istranslated="1"></span>x</span></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"><div class="CodeMirror-cursor" style="left: 0px; top: 0px; height: 19.6875px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation"><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 39px; width: 1px; border-bottom: 0px solid transparent; top: 20px;"></div><div class="CodeMirror-gutters" style="height: 59px;"><div class="CodeMirror-gutter CodeMirror-lint-markers"></div></div></div></div></span>
+            </div>
+        </div><!-- message end -->
+                <div class="mid_layer"></div>
+                <div class="card ungrouped" id="debug_console">
+            <div class="toolbar ">
+                    <div class="button order order_asc active">
+            
+            <span _msttexthash="135863" _msthash="198">ascendant</span>
+        </div>
+                            <div class="button order order_desc">
+            
+            <span _msttexthash="157664" _msthash="199">descendant</span>
+        </div>
+                            <div class="text">
+            
+            <span _msttexthash="122187" _msthash="200">Commande:</span>
+        </div>
+                            <div class="switch_button">
+            
+            <span _msttexthash="176943" _msthash="201">Déboguer SQL</span>
+        </div>
+                            <div class="button order_by sort_count">
+            
+            <span _msttexthash="96564" _msthash="202">Compter</span>
+        </div>
+                            <div class="button order_by sort_exec active">
+            
+            <span _msttexthash="1721499" _msthash="203">Ordre d’exécution</span>
+        </div>
+                            <div class="button order_by sort_time">
+            
+            <span _msttexthash="140179" _msthash="204">Temps pris</span>
+        </div>
+                            <div class="text">
+            
+            <span _msttexthash="220402" _msthash="205">Commandez par:</span>
+        </div>
+                            <div class="button group_queries">
+            
+            <span _msttexthash="343200" _msthash="206">Requêtes de groupe</span>
+        </div>
+                            <div class="button ungroup_queries">
+            
+            <span _msttexthash="503464" _msthash="207">Dissocier les requêtes</span>
+        </div>
+            </div>
+            <div class="content debug" style="height: 97.9147px;">
+                <div class="message welcome binded" _msttexthash="9382932" _msthash="608">Une erreur s’est produite lors de l’obtention des informations de débogage SQL.</div>
+                <div class="debugLog"></div>
+            </div> <!-- Content -->
+            <div class="templates" _msthidden="4">
+                <div class="debug_query action_content" _msthidden="4">
+                    <span class="action collapse" _msttexthash="113477" _msthidden="1" _msthash="208">
+            Collapse
+                    </span>
+                            <font _mstmutation="1" _msttexthash="591994" _msthidden="1" _msthash="209"><span class="action expand" _mstmutation="1">
+            Expand
+                    </span>
+                            <span class="action dbg_show_trace" _mstmutation="1">
+            Show trace
+                    </span>
+                            <span class="action dbg_hide_trace" _mstmutation="1">
+            Hide trace
+                    </span></font>
+                            <span class="text count hide" _msttexthash="62218" _msthidden="1" _msthash="210">
+            Count
+                    </span>
+                            <span class="text time" _msttexthash="134082" _msthidden="1" _msthash="211">
+            Time taken
+                    </span>
+            </div>
+            </div> <!-- Template -->
+        </div> <!-- Debug SQL card -->
+                        <div class="card" id="pma_console_options">
+            <div class="toolbar ">
+                    <div class="switch_button">
+            
+            <span _msttexthash="98527" _msthash="212">Options</span>
+        </div>
+                            <div class="button default">
+            
+            <span _msttexthash="362544" _msthash="213">Définir par défaut</span>
+        </div>
+            </div>
+            <div class="content" style="height: 100.667px;">
+                <label>
+                    <input type="checkbox" name="always_expand"><font _mstmutation="1" _msttexthash="1457027" _msthash="214">Toujours développer les messages de requête </font></label>
+                <br>
+                <label>
+                    <input type="checkbox" name="start_history"><font _mstmutation="1" _msttexthash="3417739" _msthash="215">Afficher l’historique des requêtes au démarrage </font></label>
+                <br>
+                <label>
+                    <input type="checkbox" name="current_query"><font _mstmutation="1" _msttexthash="1310569" _msthash="216">Afficher la requête de navigation actuelle </font></label>
+                <br>
+                <label>
+                    <input type="checkbox" name="enter_executes"><font _mstmutation="1" _msttexthash="10187281" _msthash="217"> Exécutez des requêtes sur Entrée et insérez une nouvelle ligne avec Maj + Entrée. Pour rendre cela permanent, affichez les paramètres. </font></label>
+                <br>
+                <label>
+                    <input type="checkbox" name="dark_theme"><font _mstmutation="1" _msttexthash="450736" _msthash="218">Passer au thème sombre </font></label>
+                <br>
+            </div>
+        </div> <!-- Options card -->
+        <div class="templates" _msthidden="2">
+                        <div class="query_actions" _msthidden="2">
+                    <span class="action collapse" _msttexthash="113477" _msthidden="1" _msthash="219">
+            Collapse
+                    </span>
+                            <font _mstmutation="1" _msttexthash="4127292" _msthidden="1" _msthash="220"><span class="action expand" _mstmutation="1">
+            Expand
+                    </span>
+                            <span class="action requery" _mstmutation="1">
+            Requery
+                    </span>
+                            <span class="action edit" _mstmutation="1">
+            Edit
+                    </span>
+                            <span class="action explain" _mstmutation="1">
+            Explain
+                    </span>
+                            <span class="action profiling" _mstmutation="1">
+            Profiling
+                    </span>
+                            <span class="action bookmark" _mstmutation="1">
+            Bookmark
+                    </span>
+                            <span class="text failed" _mstmutation="1">
+            Query failed
+                    </span>
+                            <span class="text targetdb" _mstmutation="1">
+            Database
+                            : <span></span>
+                    </span>
+                            <span class="text query_time" _mstmutation="1">
+            Queried time
+                            : <span></span>
+                    </span></font>
+            </div>
+        </div>
+    </div> <!-- #console end -->
+</div> <!-- #console_container end -->
+
+
+  <div id="page_content"><div id="page_settings_modal" _msthidden="18"><div class="page_settings" _msthidden="18"><form method="post" action="http://localhost/phpMyAdmin/index.php?route=%2Fdatabase%2Fstructure&amp;db=gmcode&amp;server=1" class="config-form disableAjax" _msthidden="18">
+  <input type="hidden" name="tab_hash" value="">
+      <input type="hidden" name="check_page_refresh" id="check_page_refresh" value="">
+    <input type="hidden" name="token" value="3232366658283c48797e6f332b444043">
+  <input type="hidden" name="submit_save" value="DbStructure">
+<ul class="tabs responsivetable row" _msthidden="1">
+      <li class="active" _msthidden="1"><a href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;db=gmcode#DbStructure" _msttexthash="357903" _msthidden="1" _msthash="3917">Database structure</a></li>
+  </ul>
+<div class="tabs_contents col" _msthidden="17">
+<fieldset class="optbox" id="DbStructure" style="" _msthidden="17">
+<legend _msttexthash="357903" _msthidden="1" _msthash="3918">Database structure</legend>
+    <p _msttexthash="3006341" _msthidden="1" _msthash="3919">Choose which details to show in the database structure (list of tables).</p>
+<table class="pma-table" width="100%" cellspacing="0" _msthidden="15">
+<tbody _msthidden="15"><tr _msthidden="3"><th _msthidden="3"><label for="ShowDbStructureCharset" _msttexthash="319540" _msthidden="1" _msthash="3920">Show table charset</label><span class="doc"><a href="http://localhost/phpMyAdmin/doc/html/config.html#cfg_ShowDbStructureCharset" target="documentation"><img src="./checkpoint gmd_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help" _msthidden="A" _mstalt="234962" _msthash="3921"></a>
+</span><small _msttexthash="2141113" _msthidden="1" _msthash="3922">Show or hide a column displaying the charset for all tables.</small></th><td><span class="checkbox"><input type="checkbox" name="ShowDbStructureCharset" id="ShowDbStructureCharset"></span><a class="restore-default hide" href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;db=gmcode#ShowDbStructureCharset" title="Restore default value" style="display: inline-block; opacity: 0.25;"><img src="./checkpoint gmd_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr _msthidden="3"><th _msthidden="3"><label for="ShowDbStructureComment" _msttexthash="355862" _msthidden="1" _msthash="3923">Show table comments</label><span class="doc"><a href="http://localhost/phpMyAdmin/doc/html/config.html#cfg_ShowDbStructureComment" target="documentation"><img src="./checkpoint gmd_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help" _msthidden="A" _mstalt="234962" _msthash="3924"></a>
+</span><small _msttexthash="2228460" _msthidden="1" _msthash="3925">Show or hide a column displaying the comments for all tables.</small></th><td><span class="checkbox"><input type="checkbox" name="ShowDbStructureComment" id="ShowDbStructureComment"></span><a class="restore-default hide" href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;db=gmcode#ShowDbStructureComment" title="Restore default value" style="display: inline-block; opacity: 0.25;"><img src="./checkpoint gmd_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr _msthidden="3"><th _msthidden="3"><label for="ShowDbStructureCreation" _msttexthash="501072" _msthidden="1" _msthash="3926">Show creation timestamp</label><span class="doc"><a href="http://localhost/phpMyAdmin/doc/html/config.html#cfg_ShowDbStructureCreation" target="documentation"><img src="./checkpoint gmd_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help" _msthidden="A" _mstalt="234962" _msthash="3927"></a>
+</span><small _msttexthash="2982512" _msthidden="1" _msthash="3928">Show or hide a column displaying the Creation timestamp for all tables.</small></th><td><span class="checkbox"><input type="checkbox" name="ShowDbStructureCreation" id="ShowDbStructureCreation"></span><a class="restore-default hide" href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;db=gmcode#ShowDbStructureCreation" title="Restore default value" style="display: inline-block; opacity: 0.25;"><img src="./checkpoint gmd_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr _msthidden="3"><th _msthidden="3"><label for="ShowDbStructureLastUpdate" _msttexthash="582101" _msthidden="1" _msthash="3929">Show last update timestamp</label><span class="doc"><a href="http://localhost/phpMyAdmin/doc/html/config.html#cfg_ShowDbStructureLastUpdate" target="documentation"><img src="./checkpoint gmd_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help" _msthidden="A" _mstalt="234962" _msthash="3930"></a>
+</span><small _msttexthash="3174275" _msthidden="1" _msthash="3931">Show or hide a column displaying the Last update timestamp for all tables.</small></th><td><span class="checkbox"><input type="checkbox" name="ShowDbStructureLastUpdate" id="ShowDbStructureLastUpdate"></span><a class="restore-default hide" href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;db=gmcode#ShowDbStructureLastUpdate" title="Restore default value" style="display: inline-block; opacity: 0.25;"><img src="./checkpoint gmd_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr _msthidden="3"><th _msthidden="3"><label for="ShowDbStructureLastCheck" _msttexthash="536393" _msthidden="1" _msthash="3932">Show last check timestamp</label><span class="doc"><a href="http://localhost/phpMyAdmin/doc/html/config.html#cfg_ShowDbStructureLastCheck" target="documentation"><img src="./checkpoint gmd_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help" _msthidden="A" _mstalt="234962" _msthash="3933"></a>
+</span><small _msttexthash="3066440" _msthidden="1" _msthash="3934">Show or hide a column displaying the Last check timestamp for all tables.</small></th><td><span class="checkbox"><input type="checkbox" name="ShowDbStructureLastCheck" id="ShowDbStructureLastCheck"></span><a class="restore-default hide" href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;db=gmcode#ShowDbStructureLastCheck" title="Restore default value" style="display: inline-block; opacity: 0.25;"><img src="./checkpoint gmd_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr></tbody></table>
+</fieldset>
+</div>
+</form>
+<script type="text/javascript">
+    if (typeof configInlineParams === 'undefined' || !Array.isArray(configInlineParams)) {
+        configInlineParams = [];
+    }
+    configInlineParams.push(function () {
+        $.extend(Messages, {
+	'error_nan_p': 'Not a positive number!',
+	'error_nan_nneg': 'Not a non-negative number!',
+	'error_incorrect_port': 'Not a valid port number!',
+	'error_invalid_value': 'Incorrect value!',
+	'error_value_lte': 'Value must be less than or equal to %s!'});
+$.extend(defaultValues, {
+	'ShowDbStructureCharset': false,
+	'ShowDbStructureComment': false,
+	'ShowDbStructureCreation': false,
+	'ShowDbStructureLastUpdate': false,
+	'ShowDbStructureLastCheck': false});
+    });
+    if (typeof configScriptLoaded !== 'undefined' && configInlineParams) {
+        loadInlineConfig();
+    }
+</script>
+</div></div>  <div id="tableslistcontainer">
+    
+
+    <div class="row">
+	<div class="col-12">
+		<fieldset id="tableFilter">
+		    <legend _msttexthash="96499" _msthash="3935">Filtres</legend>
+		    <div class="formelement">
+		        <label for="filterText" _msttexthash="279929" _msthash="3936">Contenant le mot:</label>
+		        <input name="filterText" type="text" id="filterText" value="">
+		    </div>
+		</fieldset>
+	</div>
+</div>
+<form method="post" action="http://localhost/phpMyAdmin/index.php?route=/database/structure" name="tablesForm" id="tablesForm">
+<input type="hidden" name="db" value="gmcode"><input type="hidden" name="token" value="3232366658283c48797e6f332b444043">
+<div class="table-responsive">
+<table class="table table-light table-striped table-hover table-sm w-auto data">
+    <thead class="thead-light">
+        <tr>
+            <th class="d-print-none"></th>
+            <th><a href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;db=gmcode&amp;pos=0&amp;sort=table&amp;sort_order=DESC" title="Sort" onmouseover="$(&#39;.sort_arrow&#39;).toggle();" onmouseout="$(&#39;.sort_arrow&#39;).toggle();"><font _mstmutation="1" _msttexthash="57681" _msthash="3939">Table </font><img src="./checkpoint gmd_files/dot.gif" title="" alt="Ascendant" class="icon ic_s_asc sort_arrow" _mstalt="131768" _msthash="3938"> <img src="./checkpoint gmd_files/dot.gif" title="" alt="Descending" class="icon ic_s_desc sort_arrow hide" _msthidden="A" _mstalt="153504" _msthash="3937"></a></th>
+            
+                                                                                            <th colspan="7" class="d-print-none" _msttexthash="76466" _msthash="3940">
+                Action            </th>
+                        <th>
+                <a href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;db=gmcode&amp;pos=0&amp;sort=records&amp;sort_order=DESC" title="Sort" _msttexthash="76570" _msthash="3941">Lignes</a>
+                <span class="pma_hint" _msthidden="1"><img src="./checkpoint gmd_files/dot.gif" title="" alt="" class="icon ic_b_help"><span class="hide" _msttexthash="2903485" _msthidden="1" _msthash="3942">May be approximate. Click on the number to get the exact count. See <a href="http://localhost/phpMyAdmin/doc/html/faq.html#faq3-11" target="documentation">FAQ 3.11</a>.</span></span>
+            </th>
+                            <th><a href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;db=gmcode&amp;pos=0&amp;sort=type&amp;sort_order=ASC" title="Sort" _msttexthash="46462" _msthash="3943">Type</a></th>
+                <th><a href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;db=gmcode&amp;pos=0&amp;sort=collation&amp;sort_order=ASC" title="Sort" _msttexthash="158210" _msthash="3944">Classement</a></th>
+            
+                                            <th><a href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;db=gmcode&amp;pos=0&amp;sort=size&amp;sort_order=DESC" title="Sort" _msttexthash="75257" _msthash="3945">Taille</a></th>
+                                <th><a href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;db=gmcode&amp;pos=0&amp;sort=overhead&amp;sort_order=DESC" title="Sort" _msttexthash="282737" _msthash="3946">Frais généraux</a></th>
+            
+            
+            
+            
+            
+                    </tr>
+    </thead>
+    <tbody>
+            <tr id="row_tbl_1" data-filter-row="CUSTOMER">
+    <td class="text-center d-print-none">
+        <input type="checkbox" name="selected_tbl[]" class="checkall" value="customer" id="checkbox_tbl_1">
+    </td>
+    <th>
+        <a href="http://localhost/phpMyAdmin/index.php?route=/sql&amp;db=gmcode&amp;table=customer&amp;pos=0" title="" _msttexthash="79482" _msthash="3947"> client </a>
+        
+    </th>
+    
+                <td class="text-center d-print-none">
+                                    <a id="91ec1f9324753048c0096d036a694f86_favorite_anchor" class="ajax favorite_table_anchor" href="http://localhost/phpMyAdmin/index.php?route=/database/structure/favorite-table&amp;db=gmcode&amp;ajax_request=1&amp;favorite_table=customer&amp;add_favorite=1" title="Add to Favorites" data-favtargets="2209708172cdddcf8b95086b4c17fcd2">
+    <span class="nowrap"><img src="./checkpoint gmd_files/dot.gif" title="" alt="" class="icon ic_b_no_favorite">&nbsp;</span>
+</a>
+        </td>
+    
+    <td class="text-center d-print-none">
+        <a href="http://localhost/phpMyAdmin/index.php?route=/sql&amp;db=gmcode&amp;table=customer&amp;pos=0">
+          <span class="nowrap" _msttexthash="138307" _msthash="3949"><img src="./checkpoint gmd_files/dot.gif" title="Browse" alt="Parcourir" class="icon ic_bd_browse" _mstalt="78520" _msthash="3948" _istranslated="1"> Parcourir</span>
+        </a>
+    </td>
+    <td class="text-center d-print-none">
+        <a href="http://localhost/phpMyAdmin/index.php?route=/table/structure&amp;db=gmcode&amp;table=customer">
+          <span class="nowrap" _msttexthash="140634" _msthash="3951"><img src="./checkpoint gmd_files/dot.gif" title="Structure" alt="Structure" class="icon ic_b_props" _mstalt="140634" _msthash="3950">&nbsp;Structure</span>
+        </a>
+    </td>
+    <td class="text-center d-print-none">
+        <a href="http://localhost/phpMyAdmin/index.php?route=/table/search&amp;db=gmcode&amp;table=customer">
+          <span class="nowrap" _msttexthash="154362" _msthash="3953"><img src="./checkpoint gmd_files/dot.gif" title="Search" alt="Rechercher" class="icon ic_bd_select" _mstalt="74607" _msthash="3952" _istranslated="1"> Rechercher</span>
+        </a>
+    </td>
+
+            <td class="insert_table text-center d-print-none">
+            <a href="http://localhost/phpMyAdmin/index.php?route=/table/change&amp;db=gmcode&amp;table=customer"><span class="nowrap" _msttexthash="113152" _msthash="3955"><img src="./checkpoint gmd_files/dot.gif" title="Insert" alt="Insérer" class="icon ic_b_insrow" _mstalt="79066" _msthash="3954" _istranslated="1"> Insérer</span></a>
+        </td>
+                  <td class="text-center d-print-none">
+                <a class="truncate_table_anchor ajax" href="http://localhost/phpMyAdmin/index.php?route=/sql" data-post="db=gmcode&amp;table=customer&amp;sql_query=TRUNCATE+%60customer%60&amp;message_to_show=Table%2Bcustomer%2Bhas%2Bbeen%2Bemptied.">
+                  <span class="nowrap" _msttexthash="43576" _msthash="3957"><img src="./checkpoint gmd_files/dot.gif" title="Empty" alt="Vide" class="icon ic_bd_empty" _mstalt="63102" _msthash="3956" _istranslated="1"> Vide</span>
+                </a>
+          </td>
+                <td class="text-center d-print-none">
+            <a class="ajax drop_table_anchor" href="http://localhost/phpMyAdmin/index.php?route=/sql" data-post="db=gmcode&amp;table=customer&amp;reload=1&amp;purge=1&amp;sql_query=DROP+TABLE+%60customer%60&amp;message_to_show=Table+customer+has+been+dropped.">
+                <span class="nowrap" _msttexthash="79118" _msthash="3959"><img src="./checkpoint gmd_files/dot.gif" title="Drop" alt="Goutte" class="icon ic_b_drop" _mstalt="45591" _msthash="3958" _istranslated="1"> Goutte</span>
+            </a>
+        </td>
+    
+                    
+                <td class="value tbl_rows text-monospace text-right" data-table="customer" _msttexthash="4368" _msthash="3960">
+                            0
+                        
+        </td>
+
+                    <td class="nowrap" _msttexthash="65403" _msthash="3961">
+                                    InnoDB
+                            </td>
+                            <td class="nowrap">
+                    <dfn title="Unicode, case-insensitive" _msttexthash="276653" _msthash="3962">utf8_general_ci</dfn>
+
+                </td>
+                    
+                    <td class="value tbl_size text-monospace text-right">
+                <a href="http://localhost/phpMyAdmin/index.php?route=/table/structure&amp;db=gmcode&amp;table=customer#showusage" _msttexthash="67327" _msthash="3963">  <span _istranslated="1">16,0</span> <span class="unit" _istranslated="1">Kio</span>  </a>
+            </td>
+            <td class="value tbl_overhead text-monospace text-right">
+                -
+            </td>
+        
+                            
+        
+        
+        
+        
+    </tr>
+            <tr id="row_tbl_2" data-filter-row="ORDERS">
+    <td class="text-center d-print-none">
+        <input type="checkbox" name="selected_tbl[]" class="checkall" value="orders" id="checkbox_tbl_2">
+    </td>
+    <th>
+        <a href="http://localhost/phpMyAdmin/index.php?route=/sql&amp;db=gmcode&amp;table=orders&amp;pos=0" title="" _msttexthash="80860" _msthash="3964"> ordres </a>
+        
+    </th>
+    
+                <td class="text-center d-print-none">
+                                    <a id="12c500ed0b7879105fb46af0f246be87_favorite_anchor" class="ajax favorite_table_anchor" href="http://localhost/phpMyAdmin/index.php?route=/database/structure/favorite-table&amp;db=gmcode&amp;ajax_request=1&amp;favorite_table=orders&amp;add_favorite=1" title="Add to Favorites" data-favtargets="094200b0d7e0830675cbb648763444c4">
+    <span class="nowrap"><img src="./checkpoint gmd_files/dot.gif" title="" alt="" class="icon ic_b_no_favorite">&nbsp;</span>
+</a>
+        </td>
+    
+    <td class="text-center d-print-none">
+        <a href="http://localhost/phpMyAdmin/index.php?route=/sql&amp;db=gmcode&amp;table=orders&amp;pos=0">
+          <span class="nowrap" _msttexthash="138307" _msthash="3966"><img src="./checkpoint gmd_files/dot.gif" title="Browse" alt="Parcourir" class="icon ic_bd_browse" _mstalt="78520" _msthash="3965" _istranslated="1"> Parcourir</span>
+        </a>
+    </td>
+    <td class="text-center d-print-none">
+        <a href="http://localhost/phpMyAdmin/index.php?route=/table/structure&amp;db=gmcode&amp;table=orders">
+          <span class="nowrap" _msttexthash="140634" _msthash="3968"><img src="./checkpoint gmd_files/dot.gif" title="Structure" alt="Structure" class="icon ic_b_props" _mstalt="140634" _msthash="3967">&nbsp;Structure</span>
+        </a>
+    </td>
+    <td class="text-center d-print-none">
+        <a href="http://localhost/phpMyAdmin/index.php?route=/table/search&amp;db=gmcode&amp;table=orders">
+          <span class="nowrap" _msttexthash="154362" _msthash="3970"><img src="./checkpoint gmd_files/dot.gif" title="Search" alt="Rechercher" class="icon ic_bd_select" _mstalt="74607" _msthash="3969" _istranslated="1"> Rechercher</span>
+        </a>
+    </td>
+
+            <td class="insert_table text-center d-print-none">
+            <a href="http://localhost/phpMyAdmin/index.php?route=/table/change&amp;db=gmcode&amp;table=orders"><span class="nowrap" _msttexthash="113152" _msthash="3972"><img src="./checkpoint gmd_files/dot.gif" title="Insert" alt="Insérer" class="icon ic_b_insrow" _mstalt="79066" _msthash="3971" _istranslated="1"> Insérer</span></a>
+        </td>
+                  <td class="text-center d-print-none">
+                <a class="truncate_table_anchor ajax" href="http://localhost/phpMyAdmin/index.php?route=/sql" data-post="db=gmcode&amp;table=orders&amp;sql_query=TRUNCATE+%60orders%60&amp;message_to_show=Table%2Borders%2Bhas%2Bbeen%2Bemptied.">
+                  <span class="nowrap" _msttexthash="43576" _msthash="3974"><img src="./checkpoint gmd_files/dot.gif" title="Empty" alt="Vide" class="icon ic_bd_empty" _mstalt="63102" _msthash="3973" _istranslated="1"> Vide</span>
+                </a>
+          </td>
+                <td class="text-center d-print-none">
+            <a class="ajax drop_table_anchor" href="http://localhost/phpMyAdmin/index.php?route=/sql" data-post="db=gmcode&amp;table=orders&amp;reload=1&amp;purge=1&amp;sql_query=DROP+TABLE+%60orders%60&amp;message_to_show=Table+orders+has+been+dropped.">
+                <span class="nowrap" _msttexthash="79118" _msthash="3976"><img src="./checkpoint gmd_files/dot.gif" title="Drop" alt="Goutte" class="icon ic_b_drop" _mstalt="45591" _msthash="3975" _istranslated="1"> Goutte</span>
+            </a>
+        </td>
+    
+                    
+                <td class="value tbl_rows text-monospace text-right" data-table="orders" _msttexthash="4368" _msthash="3977">
+                            0
+                        
+        </td>
+
+                    <td class="nowrap" _msttexthash="65403" _msthash="3978">
+                                    InnoDB
+                            </td>
+                            <td class="nowrap">
+                    <dfn title="Unicode, case-insensitive" _msttexthash="276653" _msthash="3979">utf8_general_ci</dfn>
+
+                </td>
+                    
+                    <td class="value tbl_size text-monospace text-right">
+                <a href="http://localhost/phpMyAdmin/index.php?route=/table/structure&amp;db=gmcode&amp;table=orders#showusage" _msttexthash="67808" _msthash="3980">  <span _istranslated="1">48,0</span> <span class="unit" _istranslated="1">Kio</span>  </a>
+            </td>
+            <td class="value tbl_overhead text-monospace text-right">
+                -
+            </td>
+        
+                            
+        
+        
+        
+        
+    </tr>
+            <tr id="row_tbl_3" data-filter-row="PRODUCT">
+    <td class="text-center d-print-none">
+        <input type="checkbox" name="selected_tbl[]" class="checkall" value="product" id="checkbox_tbl_3">
+    </td>
+    <th>
+        <a href="http://localhost/phpMyAdmin/index.php?route=/sql&amp;db=gmcode&amp;table=product&amp;pos=0" title="" _msttexthash="100750" _msthash="3981"> produit </a>
+        
+    </th>
+    
+                <td class="text-center d-print-none">
+                                    <a id="f5bf48aa40cad7891eb709fcf1fde128_favorite_anchor" class="ajax favorite_table_anchor" href="http://localhost/phpMyAdmin/index.php?route=/database/structure/favorite-table&amp;db=gmcode&amp;ajax_request=1&amp;favorite_table=product&amp;add_favorite=1" title="Add to Favorites" data-favtargets="928aabc10484c427b77da12767a21282">
+    <span class="nowrap"><img src="./checkpoint gmd_files/dot.gif" title="" alt="" class="icon ic_b_no_favorite">&nbsp;</span>
+</a>
+        </td>
+    
+    <td class="text-center d-print-none">
+        <a href="http://localhost/phpMyAdmin/index.php?route=/sql&amp;db=gmcode&amp;table=product&amp;pos=0">
+          <span class="nowrap" _msttexthash="138307" _msthash="3983"><img src="./checkpoint gmd_files/dot.gif" title="Browse" alt="Parcourir" class="icon ic_bd_browse" _mstalt="78520" _msthash="3982" _istranslated="1"> Parcourir</span>
+        </a>
+    </td>
+    <td class="text-center d-print-none">
+        <a href="http://localhost/phpMyAdmin/index.php?route=/table/structure&amp;db=gmcode&amp;table=product">
+          <span class="nowrap" _msttexthash="140634" _msthash="3985"><img src="./checkpoint gmd_files/dot.gif" title="Structure" alt="Structure" class="icon ic_b_props" _mstalt="140634" _msthash="3984">&nbsp;Structure</span>
+        </a>
+    </td>
+    <td class="text-center d-print-none">
+        <a href="http://localhost/phpMyAdmin/index.php?route=/table/search&amp;db=gmcode&amp;table=product">
+          <span class="nowrap" _msttexthash="154362" _msthash="3987"><img src="./checkpoint gmd_files/dot.gif" title="Search" alt="Rechercher" class="icon ic_bd_select" _mstalt="74607" _msthash="3986" _istranslated="1"> Rechercher</span>
+        </a>
+    </td>
+
+            <td class="insert_table text-center d-print-none">
+            <a href="http://localhost/phpMyAdmin/index.php?route=/table/change&amp;db=gmcode&amp;table=product"><span class="nowrap" _msttexthash="113152" _msthash="3989"><img src="./checkpoint gmd_files/dot.gif" title="Insert" alt="Insérer" class="icon ic_b_insrow" _mstalt="79066" _msthash="3988" _istranslated="1"> Insérer</span></a>
+        </td>
+                  <td class="text-center d-print-none">
+                <a class="truncate_table_anchor ajax" href="http://localhost/phpMyAdmin/index.php?route=/sql" data-post="db=gmcode&amp;table=product&amp;sql_query=TRUNCATE+%60product%60&amp;message_to_show=Table%2Bproduct%2Bhas%2Bbeen%2Bemptied.">
+                  <span class="nowrap" _msttexthash="43576" _msthash="3991"><img src="./checkpoint gmd_files/dot.gif" title="Empty" alt="Vide" class="icon ic_bd_empty" _mstalt="63102" _msthash="3990" _istranslated="1"> Vide</span>
+                </a>
+          </td>
+                <td class="text-center d-print-none">
+            <a class="ajax drop_table_anchor" href="http://localhost/phpMyAdmin/index.php?route=/sql" data-post="db=gmcode&amp;table=product&amp;reload=1&amp;purge=1&amp;sql_query=DROP+TABLE+%60product%60&amp;message_to_show=Table+product+has+been+dropped.">
+                <span class="nowrap" _msttexthash="79118" _msthash="3993"><img src="./checkpoint gmd_files/dot.gif" title="Drop" alt="Goutte" class="icon ic_b_drop" _mstalt="45591" _msthash="3992" _istranslated="1"> Goutte</span>
+            </a>
+        </td>
+    
+                    
+                <td class="value tbl_rows text-monospace text-right" data-table="product" _msttexthash="4368" _msthash="3994">
+                            0
+                        
+        </td>
+
+                    <td class="nowrap" _msttexthash="65403" _msthash="3995">
+                                    InnoDB
+                            </td>
+                            <td class="nowrap">
+                    <dfn title="Unicode, case-insensitive" _msttexthash="276653" _msthash="3996">utf8_general_ci</dfn>
+
+                </td>
+                    
+                    <td class="value tbl_size text-monospace text-right">
+                <a href="http://localhost/phpMyAdmin/index.php?route=/table/structure&amp;db=gmcode&amp;table=product#showusage" _msttexthash="67327" _msthash="3997">  <span _istranslated="1">16,0</span> <span class="unit" _istranslated="1">Kio</span>  </a>
+            </td>
+            <td class="value tbl_overhead text-monospace text-right">
+                -
+            </td>
+        
+                            
+        
+        
+        
+        
+    </tr>
+        </tbody>
+            <tfoot id="tbl_summary_row" class="thead-light">
+<tr>
+    <th class="d-print-none"></th>
+    <th class="tbl_num text-nowrap" _msttexthash="133081" _msthash="3998"> 3 tableaux </th>
+                <th colspan="7" class="d-print-none" _msttexthash="60463" _msthash="3999">Somme</th>
+                                                <th class="value tbl_rows text-monospace text-right" _msttexthash="4368" _msthash="4000">0</th>
+                                                                    <th class="text-center">
+            <dfn title="InnoDB is the default storage engine on this MySQL server." _msttexthash="65403" _msthash="4001">
+                InnoDB
+            </dfn>
+        </th>
+        <th>
+                            <dfn title="Unicode, case-insensitive (Default)" _msttexthash="276653" _msthash="4002">
+                    utf8_general_ci
+                </dfn>
+                    </th>
+    
+                                    <th class="value tbl_size text-monospace text-right" _msttexthash="67340" _msthash="4003">80,0 Kio</th>
+
+                                <th class="value tbl_overhead text-monospace text-right" _msttexthash="11232" _msthash="4004">0 B</th>
+    
+                    </tr>
+</tfoot>
+    </table>
+</div>
+    <div class="clearfloat print_ignore">
+    <img class="selectallarrow" src="./checkpoint gmd_files/arrow_ltr.png" width="38" height="22" alt="Avec sélectionné :" _mstalt="218244" _msthash="4005">
+    <input type="checkbox" id="tablesForm_checkall" class="checkall_box" title="Check all">
+    <label for="tablesForm_checkall" _msttexthash="158496" _msthash="4006">Tout cocher</label>
+        <select name="submit_mult" style="margin: 0 3em 0 3em;">
+        <option value="With selected:" selected="selected" _msttexthash="218244" _msthash="4007">Avec sélectionné :</option>
+        <option value="copy_tbl" _msttexthash="134108" _msthash="4008">Copier la table</option>
+        <option value="show_create" _msttexthash="157118" _msthash="4009">Afficher créer</option>
+        <option value="export" _msttexthash="80691" _msthash="4010">Exportation</option>
+                    <optgroup label="Supprimer des données ou une table" _mstlabel="345072" _msthash="4011">
+                <option value="empty_tbl" _msttexthash="63102" _msthash="4012">Vide</option>
+                <option value="drop_tbl" _msttexthash="45591" _msthash="4013">Goutte</option>
+            </optgroup>
+            <optgroup label="Maintenance de la table" _mstlabel="312299" _msthash="4014">
+                <option value="analyze_tbl" _msttexthash="204061" _msthash="4015">Tableau d’analyse</option>
+                <option value="check_tbl" _msttexthash="151294" _msthash="4016">Vérifier le tableau</option>
+                <option value="checksum_tbl" _msttexthash="229125" _msthash="4017">Table de somme de contrôle</option>
+                <option value="optimize_tbl" _msttexthash="231699" _msthash="4018">Optimiser la table</option>
+                <option value="repair_tbl" _msttexthash="177632" _msthash="4019">Table de réparation</option>
+            </optgroup>
+            <optgroup label="Préfixe" _mstlabel="77948" _msthash="4020">
+                <option value="add_prefix_tbl" _msttexthash="317993" _msthash="4021">Ajouter un préfixe à la table</option>
+                <option value="replace_prefix_tbl" _msttexthash="382291" _msthash="4022">Remplacer le préfixe de table</option>
+                <option value="copy_tbl_change_prefix" _msttexthash="426283" _msthash="4023">Copier la table avec préfixe</option>
+            </optgroup>
+                    </select>
+    
+</div>
+</form>
+
+
+    
+  </div>
+  <hr>
+  <p class="print_ignore">
+    <font _mstmutation="1" _msttexthash="4158219" _msthash="4026"><a href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;db=gmcode#" id="printView" _mstmutation="1" _istranslated="1"> <span class="nowrap" _istranslated="1"><img src="./checkpoint gmd_files/dot.gif" title="Print" alt="Imprimer" class="icon ic_b_print" _mstalt="62309" _msthash="4024" _istranslated="1"> Dictionnaire de données d’impression</span> </a> <a href="http://localhost/phpMyAdmin/index.php?route=/database/data-dictionary&amp;db=gmcode&amp;goto=index.php%3Froute%3D%2Fdatabase%2Fstructure" target="print_view" _mstmutation="1" _istranslated="1"> <span class="nowrap" _istranslated="1"><img src="./checkpoint gmd_files/dot.gif" title="Data dictionary" alt="Dictionnaire de données" class="icon ic_b_tblanalyse" _mstalt="261170" _msthash="4025" _istranslated="1"></span> </a></font>
+  </p>
+
+  <form id="create_table_form_minimal" method="post" action="http://localhost/phpMyAdmin/index.php?route=/table/create" class="lock-page">
+    <fieldset>
+        <legend>
+        <img src="./checkpoint gmd_files/dot.gif" title="" alt="" class="icon ic_b_table_add"><font _mstmutation="1" _msttexthash="244543" _msthash="4027"> Créer une table </font></legend>
+        <input type="hidden" name="db" value="gmcode"><input type="hidden" name="token" value="3232366658283c48797e6f332b444043">
+        <div class="formelement"><font _mstmutation="1" _msttexthash="38935" _msthash="4028"> Nom: </font><input type="text" name="table" maxlength="64" size="30" required="required">
+        </div>
+        <div class="formelement"><font _mstmutation="1" _msttexthash="337285" _msthash="4029"> Nombre de colonnes: </font><input type="number" min="1" name="num_fields" value="4" required="required">
+        </div>
+        <div class="clearfloat"></div>
+    </fieldset>
+    <fieldset class="tblFooters">
+        <input class="btn btn-primary" type="submit" value="Aller" _mstvalue="18005" _msthash="4030">
+    </fieldset>
+</form>
+
+</div>
+
+
+
+  <div id="selflink" class="print_ignore"><a href="http://localhost/phpMyAdmin/index.php?route=%2Fdatabase%2Fstructure&amp;db=gmcode&amp;server=1" title="Open new phpMyAdmin window" target="_blank" rel="noopener noreferrer"><img src="./checkpoint gmd_files/dot.gif" title="Open new phpMyAdmin window" alt="Ouvrir une nouvelle fenêtre phpMyAdmin" class="icon ic_window-new" _mstalt="569374" _msthash="605"></a></div>
+
+  
+
+  
+
+
+
+  
+  
+  
+
+<div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div tabindex="-1" role="dialog" class="ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ui-dialog-buttons ui-draggable ui-resizable" aria-describedby="pma_navigation_settings" aria-labelledby="ui-id-4" style="position: fixed; height: auto; width: 700px; top: 81.1368px; left: 522.5px;"><div class="ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle"><span id="ui-id-4" class="ui-dialog-title" _msttexthash="572728" _msthash="4062">Paramètres liés à la page</span><button type="button" class="ui-button ui-corner-all ui-widget ui-button-icon-only ui-dialog-titlebar-close" title="Close"><span class="ui-button-icon ui-icon ui-icon-closethick"></span><span class="ui-button-icon-space"> </span><font _mstmutation="1" _msttexthash="59709" _msthash="4063">Close</font></button></div><div id="pma_navigation_settings" class="ui-dialog-content ui-widget-content" style="display: block; width: auto; min-height: 135.554px; max-height: 666.307px; height: auto;" _mstvisible="0"><div class="page_settings" _mstvisible="1"><form method="post" action="http://localhost/phpMyAdmin/index.php?route=%2Fdatabase%2Fstructure&amp;db=gmcode&amp;server=1" class="config-form disableAjax" _mstvisible="2">
+  <input type="hidden" name="tab_hash" value="" _mstvisible="3">
+      <input type="hidden" name="check_page_refresh" id="check_page_refresh" value="1" _mstvisible="3">
+    <input type="hidden" name="token" value="3232366658283c48797e6f332b444043" _mstvisible="3">
+  <input type="hidden" name="submit_save" value="Navi" _mstvisible="3">
+<ul class="tabs responsivetable row" _mstvisible="3">
+      <li class="active" _mstvisible="4"><a href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;db=gmcode#Navi_panel" _msttexthash="288106" _msthash="49" _mstvisible="5">Navigation panel</a></li>
+      <li _mstvisible="4"><a href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;db=gmcode#Navi_tree" _msttexthash="261261" _msthash="50" _mstvisible="5">Navigation tree</a></li>
+      <li _mstvisible="4"><a href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;db=gmcode#Navi_servers" _msttexthash="98397" _msthash="51" _mstvisible="5">Servers</a></li>
+      <li _mstvisible="4"><a href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;db=gmcode#Navi_databases" _msttexthash="59124" _msthash="52" _mstvisible="5">Bases</a></li>
+      <li _mstvisible="4"><a href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;db=gmcode#Navi_tables" _msttexthash="75621" _msthash="53" _mstvisible="5">Tables</a></li>
+  </ul>
+<div class="tabs_contents col" _mstvisible="3">
+<fieldset class="optbox" id="Navi_panel" style="" _mstvisible="4">
+<legend _msttexthash="288106" _msthash="54" _mstvisible="5">Navigation panel</legend>
+    <p _msttexthash="1427959" _msthash="55" _mstvisible="5">Customize appearance of the navigation panel.</p>
+<table class="pma-table" width="100%" cellspacing="0" _mstvisible="5">
+<tbody _mstvisible="6"><tr _mstvisible="7"><th _mstvisible="8"><label for="ShowDatabasesNavigationAsTree" _msttexthash="844012" _msthash="56" _mstvisible="9">Show databases navigation as tree</label><span class="doc" _mstvisible="9"><a href="http://localhost/phpMyAdmin/doc/html/config.html#cfg_ShowDatabasesNavigationAsTree" target="documentation" _mstvisible="10"><img src="./checkpoint gmd_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help" _mstalt="234962" _msthash="57" _mstvisible="11"></a>
+</span><small _msttexthash="2738385" _msthash="58" _mstvisible="9">In the navigation panel, replaces the database tree with a selector</small></th><td _mstvisible="8"><span class="checkbox" _mstvisible="9"><input type="checkbox" name="ShowDatabasesNavigationAsTree" id="ShowDatabasesNavigationAsTree" checked="checked" _mstvisible="10"></span><a class="restore-default hide" href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;db=gmcode#ShowDatabasesNavigationAsTree" title="Restore default value" style="display: inline-block; opacity: 0.25;" _mstvisible="9"><img src="./checkpoint gmd_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;" _mstvisible="10"></a></td></tr><tr _mstvisible="7"><th _mstvisible="8"><label for="NavigationLinkWithMainPanel" _msttexthash="351013" _msthash="59" _mstvisible="9">Link with main panel</label><span class="doc" _mstvisible="9"><a href="http://localhost/phpMyAdmin/doc/html/config.html#cfg_NavigationLinkWithMainPanel" target="documentation" _mstvisible="10"><img src="./checkpoint gmd_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help" _mstalt="234962" _msthash="60" _mstvisible="11"></a>
+</span><small _msttexthash="2703701" _msthash="61" _mstvisible="9">Link with main panel by highlighting the current database or table.</small></th><td _mstvisible="8"><span class="checkbox" _mstvisible="9"><input type="checkbox" name="NavigationLinkWithMainPanel" id="NavigationLinkWithMainPanel" checked="checked" _mstvisible="10"></span><a class="restore-default hide" href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;db=gmcode#NavigationLinkWithMainPanel" title="Restore default value" style="display: inline-block; opacity: 0.25;" _mstvisible="9"><img src="./checkpoint gmd_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;" _mstvisible="10"></a></td></tr><tr _mstvisible="7"><th _mstvisible="8"><label for="NavigationDisplayLogo" _msttexthash="183404" _msthash="62" _mstvisible="9">Display logo</label><span class="doc" _mstvisible="9"><a href="http://localhost/phpMyAdmin/doc/html/config.html#cfg_NavigationDisplayLogo" target="documentation" _mstvisible="10"><img src="./checkpoint gmd_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help" _mstalt="234962" _msthash="63" _mstvisible="11"></a>
+</span><small _msttexthash="678704" _msthash="64" _mstvisible="9">Show logo in navigation panel.</small></th><td _mstvisible="8"><span class="checkbox" _mstvisible="9"><input type="checkbox" name="NavigationDisplayLogo" id="NavigationDisplayLogo" checked="checked" _mstvisible="10"></span><a class="restore-default hide" href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;db=gmcode#NavigationDisplayLogo" title="Restore default value" style="display: inline-block; opacity: 0.25;" _mstvisible="9"><img src="./checkpoint gmd_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;" _mstvisible="10"></a></td></tr><tr _mstvisible="7"><th _mstvisible="8"><label for="NavigationLogoLink" _msttexthash="165256" _msthash="65" _mstvisible="9">Logo link URL</label><span class="doc" _mstvisible="9"><a href="http://localhost/phpMyAdmin/doc/html/config.html#cfg_NavigationLogoLink" target="documentation" _mstvisible="10"><img src="./checkpoint gmd_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help" _mstalt="234962" _msthash="66" _mstvisible="11"></a>
+</span><small _msttexthash="1721187" _msthash="67" _mstvisible="9">URL where logo in the navigation panel will point to.</small></th><td _mstvisible="8"><input type="text" class="w-75" name="NavigationLogoLink" id="NavigationLogoLink" value="index.php" _mstvisible="9"><a class="restore-default hide" href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;db=gmcode#NavigationLogoLink" title="Restore default value" style="display: inline-block; opacity: 0.25;" _mstvisible="9"><img src="./checkpoint gmd_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;" _mstvisible="10"></a></td></tr><tr _mstvisible="7"><th _mstvisible="8"><label for="NavigationLogoLinkWindow" _msttexthash="262028" _msthash="68" _mstvisible="9">Logo link target</label><span class="doc" _mstvisible="9"><a href="http://localhost/phpMyAdmin/doc/html/config.html#cfg_NavigationLogoLinkWindow" target="documentation" _mstvisible="10"><img src="./checkpoint gmd_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help" _mstalt="234962" _msthash="69" _mstvisible="11"></a>
+</span><small _mstvisible="9"><font _mstmutation="1" _msttexthash="1839422" _msthash="70" _mstvisible="10">Open the linked page in the main window () or in a new one ().</font><code _mstvisible="10">main</code><code _mstvisible="10">new</code></small></th><td _mstvisible="8"><select class="w-75" name="NavigationLogoLinkWindow" id="NavigationLogoLinkWindow" _mstvisible="9"><option value="main" selected="selected" _msttexthash="46592" _msthash="71" _mstvisible="10">main</option><option value="new" _msttexthash="34437" _msthash="72" _mstvisible="10">new</option></select><a class="restore-default hide" href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;db=gmcode#NavigationLogoLinkWindow" title="Restore default value" style="display: inline-block; opacity: 0.25;" _mstvisible="9"><img src="./checkpoint gmd_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;" _mstvisible="10"></a></td></tr><tr _mstvisible="7"><th _mstvisible="8"><label for="NavigationTreePointerEnable" _msttexthash="379054" _msthash="73" _mstvisible="9">Enable highlighting</label><span class="doc" _mstvisible="9"><a href="http://localhost/phpMyAdmin/doc/html/config.html#cfg_NavigationTreePointerEnable" target="documentation" _mstvisible="10"><img src="./checkpoint gmd_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help" _mstalt="234962" _msthash="74" _mstvisible="11"></a>
+</span><small _msttexthash="1160237" _msthash="75" _mstvisible="9">Highlight server under the mouse cursor.</small></th><td _mstvisible="8"><span class="checkbox" _mstvisible="9"><input type="checkbox" name="NavigationTreePointerEnable" id="NavigationTreePointerEnable" checked="checked" _mstvisible="10"></span><a class="restore-default hide" href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;db=gmcode#NavigationTreePointerEnable" title="Restore default value" style="display: inline-block; opacity: 0.25;" _mstvisible="9"><img src="./checkpoint gmd_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;" _mstvisible="10"></a></td></tr><tr _mstvisible="7"><th _mstvisible="8"><label for="FirstLevelNavigationItems" _msttexthash="627445" _msthash="76" _mstvisible="9">Maximum items on first level</label><span class="doc" _mstvisible="9"><a href="http://localhost/phpMyAdmin/doc/html/config.html#cfg_FirstLevelNavigationItems" target="documentation" _mstvisible="10"><img src="./checkpoint gmd_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help" _mstalt="234962" _msthash="77" _mstvisible="11"></a>
+</span><small _msttexthash="4978610" _msthash="78" _mstvisible="9">The number of items that can be displayed on each page on the first level of the navigation tree.</small></th><td _mstvisible="8"><input type="number" name="FirstLevelNavigationItems" id="FirstLevelNavigationItems" value="100" _mstvisible="9"><a class="restore-default hide" href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;db=gmcode#FirstLevelNavigationItems" title="Restore default value" style="display: inline-block; opacity: 0.25;" _mstvisible="9"><img src="./checkpoint gmd_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;" _mstvisible="10"></a></td></tr><tr _mstvisible="7"><th _mstvisible="8"><label for="NavigationTreeDisplayItemFilterMinimum" _msttexthash="1559974" _msthash="79" _mstvisible="9">Minimum number of items to display the filter box</label><span class="doc" _mstvisible="9"><a href="http://localhost/phpMyAdmin/doc/html/config.html#cfg_NavigationTreeDisplayItemFilterMinimum" target="documentation" _mstvisible="10"><img src="./checkpoint gmd_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help" _mstalt="234962" _msthash="80" _mstvisible="11"></a>
+</span><small _msttexthash="5250752" _msthash="81" _mstvisible="9">Defines the minimum number of items (tables, views, routines and events) to display a filter box.</small></th><td _mstvisible="8"><input type="number" name="NavigationTreeDisplayItemFilterMinimum" id="NavigationTreeDisplayItemFilterMinimum" value="30" _mstvisible="9"><a class="restore-default hide" href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;db=gmcode#NavigationTreeDisplayItemFilterMinimum" title="Restore default value" style="display: inline-block; opacity: 0.25;" _mstvisible="9"><img src="./checkpoint gmd_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;" _mstvisible="10"></a></td></tr><tr _mstvisible="7"><th _mstvisible="8"><label for="NumRecentTables" _msttexthash="386828" _msthash="82" _mstvisible="9">Recently used tables</label><span class="doc" _mstvisible="9"><a href="http://localhost/phpMyAdmin/doc/html/config.html#cfg_NumRecentTables" target="documentation" _mstvisible="10"><img src="./checkpoint gmd_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help" _mstalt="234962" _msthash="83" _mstvisible="11"></a>
+</span><small _msttexthash="1936805" _msthash="84" _mstvisible="9">Maximum number of recently used tables; set 0 to disable.</small></th><td _mstvisible="8"><input type="number" name="NumRecentTables" id="NumRecentTables" value="10" _mstvisible="9"><a class="restore-default hide" href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;db=gmcode#NumRecentTables" title="Restore default value" style="display: inline-block; opacity: 0.25;" _mstvisible="9"><img src="./checkpoint gmd_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;" _mstvisible="10"></a></td></tr><tr _mstvisible="7"><th _mstvisible="8"><label for="NumFavoriteTables" _msttexthash="259935" _msthash="85" _mstvisible="9">Favorite tables</label><span class="doc" _mstvisible="9"><a href="http://localhost/phpMyAdmin/doc/html/config.html#cfg_NumFavoriteTables" target="documentation" _mstvisible="10"><img src="./checkpoint gmd_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help" _mstalt="234962" _msthash="86" _mstvisible="11"></a>
+</span><small _msttexthash="1649635" _msthash="87" _mstvisible="9">Maximum number of favorite tables; set 0 to disable.</small></th><td _mstvisible="8"><input type="number" name="NumFavoriteTables" id="NumFavoriteTables" value="10" _mstvisible="9"><a class="restore-default hide" href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;db=gmcode#NumFavoriteTables" title="Restore default value" style="display: inline-block; opacity: 0.25;" _mstvisible="9"><img src="./checkpoint gmd_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;" _mstvisible="10"></a></td></tr><tr _mstvisible="7"><th _mstvisible="8"><label for="NavigationWidth" _msttexthash="457587" _msthash="88" _mstvisible="9">Navigation panel width</label><span class="doc" _mstvisible="9"><a href="http://localhost/phpMyAdmin/doc/html/config.html#cfg_NavigationWidth" target="documentation" _mstvisible="10"><img src="./checkpoint gmd_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help" _mstalt="234962" _msthash="89" _mstvisible="11"></a>
+</span><small _msttexthash="961311" _msthash="90" _mstvisible="9">Set to 0 to collapse navigation panel.</small></th><td _mstvisible="8"><input type="number" name="NavigationWidth" id="NavigationWidth" value="240" _mstvisible="9"><a class="restore-default hide" href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;db=gmcode#NavigationWidth" title="Restore default value" style="display: inline-block; opacity: 0.25;" _mstvisible="9"><img src="./checkpoint gmd_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;" _mstvisible="10"></a></td></tr></tbody></table>
+</fieldset>
+<fieldset class="optbox" id="Navi_tree" style="display: none;" _mstvisible="4" _msthidden="9">
+<legend _msttexthash="261261" _msthash="91" _mstvisible="5">Navigation tree</legend>
+    <p _msttexthash="728598" _msthash="92" _mstvisible="5">Customize the navigation tree.</p>
+<table class="pma-table" width="100%" cellspacing="0" _mstvisible="5" _msthidden="9">
+<tbody _mstvisible="6" _msthidden="9"><tr _mstvisible="7" _msthidden="1"><th _mstvisible="8" _msthidden="1"><label for="MaxNavigationItems" _msttexthash="455325" _msthash="93" _mstvisible="9">Maximum items in branch</label><span class="doc" _mstvisible="9"><a href="http://localhost/phpMyAdmin/doc/html/config.html#cfg_MaxNavigationItems" target="documentation" _mstvisible="10"><img src="./checkpoint gmd_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help" _mstalt="234962" _msthash="94" _mstvisible="11" _msthidden="A"></a>
+</span><small _msttexthash="3343444" _msthash="95" _mstvisible="9">The number of items that can be displayed on each page of the navigation tree.</small></th><td _mstvisible="8"><input type="number" name="MaxNavigationItems" id="MaxNavigationItems" value="50" _mstvisible="9"><a class="restore-default hide" href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;db=gmcode#MaxNavigationItems" title="Restore default value" style="display: inline-block; opacity: 0.25;" _mstvisible="9"><img src="./checkpoint gmd_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;" _mstvisible="10"></a></td></tr><tr _mstvisible="7" _msthidden="1"><th _mstvisible="8" _msthidden="1"><label for="NavigationTreeEnableGrouping" _msttexthash="425880" _msthash="96" _mstvisible="9">Group items in the tree</label><span class="doc" _mstvisible="9"><a href="http://localhost/phpMyAdmin/doc/html/config.html#cfg_NavigationTreeEnableGrouping" target="documentation" _mstvisible="10"><img src="./checkpoint gmd_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help" _mstalt="234962" _msthash="97" _mstvisible="11" _msthidden="A"></a>
+</span><small _msttexthash="6796153" _msthash="98" _mstvisible="9">Group items in the navigation tree (determined by the separator defined in the Databases and Tables tabs above).</small></th><td _mstvisible="8"><span class="checkbox" _mstvisible="9"><input type="checkbox" name="NavigationTreeEnableGrouping" id="NavigationTreeEnableGrouping" checked="checked" _mstvisible="10"></span><a class="restore-default hide" href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;db=gmcode#NavigationTreeEnableGrouping" title="Restore default value" style="display: inline-block; opacity: 0.25;" _mstvisible="9"><img src="./checkpoint gmd_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;" _mstvisible="10"></a></td></tr><tr _mstvisible="7" _msthidden="1"><th _mstvisible="8" _msthidden="1"><label for="NavigationTreeEnableExpansion" _msttexthash="850005" _msthash="99" _mstvisible="9">Enable navigation tree expansion</label><span class="doc" _mstvisible="9"><a href="http://localhost/phpMyAdmin/doc/html/config.html#cfg_NavigationTreeEnableExpansion" target="documentation" _mstvisible="10"><img src="./checkpoint gmd_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help" _mstalt="234962" _msthash="100" _mstvisible="11" _msthidden="A"></a>
+</span><small _msttexthash="3392363" _msthash="101" _mstvisible="9">Whether to offer the possibility of tree expansion in the navigation panel.</small></th><td _mstvisible="8"><span class="checkbox" _mstvisible="9"><input type="checkbox" name="NavigationTreeEnableExpansion" id="NavigationTreeEnableExpansion" checked="checked" _mstvisible="10"></span><a class="restore-default hide" href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;db=gmcode#NavigationTreeEnableExpansion" title="Restore default value" style="display: inline-block; opacity: 0.25;" _mstvisible="9"><img src="./checkpoint gmd_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;" _mstvisible="10"></a></td></tr><tr _mstvisible="7" _msthidden="1"><th _mstvisible="8" _msthidden="1"><label for="NavigationTreeShowTables" _msttexthash="322075" _msthash="102" _mstvisible="9">Show tables in tree</label><span class="doc" _mstvisible="9"><a href="http://localhost/phpMyAdmin/doc/html/config.html#cfg_NavigationTreeShowTables" target="documentation" _mstvisible="10"><img src="./checkpoint gmd_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help" _mstalt="234962" _msthash="103" _mstvisible="11" _msthidden="A"></a>
+</span><small _msttexthash="2265081" _msthash="104" _mstvisible="9">Whether to show tables under database in the navigation tree</small></th><td _mstvisible="8"><span class="checkbox" _mstvisible="9"><input type="checkbox" name="NavigationTreeShowTables" id="NavigationTreeShowTables" checked="checked" _mstvisible="10"></span><a class="restore-default hide" href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;db=gmcode#NavigationTreeShowTables" title="Restore default value" style="display: inline-block; opacity: 0.25;" _mstvisible="9"><img src="./checkpoint gmd_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;" _mstvisible="10"></a></td></tr><tr _mstvisible="7" _msthidden="1"><th _mstvisible="8" _msthidden="1"><label for="NavigationTreeShowViews" _msttexthash="296517" _msthash="105" _mstvisible="9">Show views in tree</label><span class="doc" _mstvisible="9"><a href="http://localhost/phpMyAdmin/doc/html/config.html#cfg_NavigationTreeShowViews" target="documentation" _mstvisible="10"><img src="./checkpoint gmd_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help" _mstalt="234962" _msthash="106" _mstvisible="11" _msthidden="A"></a>
+</span><small _msttexthash="2194686" _msthash="107" _mstvisible="9">Whether to show views under database in the navigation tree</small></th><td _mstvisible="8"><span class="checkbox" _mstvisible="9"><input type="checkbox" name="NavigationTreeShowViews" id="NavigationTreeShowViews" checked="checked" _mstvisible="10"></span><a class="restore-default hide" href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;db=gmcode#NavigationTreeShowViews" title="Restore default value" style="display: inline-block; opacity: 0.25;" _mstvisible="9"><img src="./checkpoint gmd_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;" _mstvisible="10"></a></td></tr><tr _mstvisible="7" _msthidden="1"><th _mstvisible="8" _msthidden="1"><label for="NavigationTreeShowFunctions" _msttexthash="428337" _msthash="108" _mstvisible="9">Show functions in tree</label><span class="doc" _mstvisible="9"><a href="http://localhost/phpMyAdmin/doc/html/config.html#cfg_NavigationTreeShowFunctions" target="documentation" _mstvisible="10"><img src="./checkpoint gmd_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help" _mstalt="234962" _msthash="109" _mstvisible="11" _msthidden="A"></a>
+</span><small _msttexthash="2519777" _msthash="110" _mstvisible="9">Whether to show functions under database in the navigation tree</small></th><td _mstvisible="8"><span class="checkbox" _mstvisible="9"><input type="checkbox" name="NavigationTreeShowFunctions" id="NavigationTreeShowFunctions" checked="checked" _mstvisible="10"></span><a class="restore-default hide" href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;db=gmcode#NavigationTreeShowFunctions" title="Restore default value" style="display: inline-block; opacity: 0.25;" _mstvisible="9"><img src="./checkpoint gmd_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;" _mstvisible="10"></a></td></tr><tr _mstvisible="7" _msthidden="1"><th _mstvisible="8" _msthidden="1"><label for="NavigationTreeShowProcedures" _msttexthash="462618" _msthash="111" _mstvisible="9">Show procedures in tree</label><span class="doc" _mstvisible="9"><a href="http://localhost/phpMyAdmin/doc/html/config.html#cfg_NavigationTreeShowProcedures" target="documentation" _mstvisible="10"><img src="./checkpoint gmd_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help" _mstalt="234962" _msthash="112" _mstvisible="11" _msthidden="A"></a>
+</span><small _msttexthash="2601469" _msthash="113" _mstvisible="9">Whether to show procedures under database in the navigation tree</small></th><td _mstvisible="8"><span class="checkbox" _mstvisible="9"><input type="checkbox" name="NavigationTreeShowProcedures" id="NavigationTreeShowProcedures" checked="checked" _mstvisible="10"></span><a class="restore-default hide" href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;db=gmcode#NavigationTreeShowProcedures" title="Restore default value" style="display: inline-block; opacity: 0.25;" _mstvisible="9"><img src="./checkpoint gmd_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;" _mstvisible="10"></a></td></tr><tr _mstvisible="7" _msthidden="1"><th _mstvisible="8" _msthidden="1"><label for="NavigationTreeShowEvents" _msttexthash="327002" _msthash="114" _mstvisible="9">Show events in tree</label><span class="doc" _mstvisible="9"><a href="http://localhost/phpMyAdmin/doc/html/config.html#cfg_NavigationTreeShowEvents" target="documentation" _mstvisible="10"><img src="./checkpoint gmd_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help" _mstalt="234962" _msthash="115" _mstvisible="11" _msthidden="A"></a>
+</span><small _msttexthash="2273050" _msthash="116" _mstvisible="9">Whether to show events under database in the navigation tree</small></th><td _mstvisible="8"><span class="checkbox" _mstvisible="9"><input type="checkbox" name="NavigationTreeShowEvents" id="NavigationTreeShowEvents" checked="checked" _mstvisible="10"></span><a class="restore-default hide" href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;db=gmcode#NavigationTreeShowEvents" title="Restore default value" style="display: inline-block; opacity: 0.25;" _mstvisible="9"><img src="./checkpoint gmd_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;" _mstvisible="10"></a></td></tr><tr _mstvisible="7" _msthidden="1"><th _mstvisible="8" _msthidden="1"><label for="NavigationTreeAutoexpandSingleDb" _msttexthash="445133" _msthash="117" _mstvisible="9">Expand single database</label><span class="doc" _mstvisible="9"><a href="http://localhost/phpMyAdmin/doc/html/config.html#cfg_NavigationTreeAutoexpandSingleDb" target="documentation" _mstvisible="10"><img src="./checkpoint gmd_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help" _mstalt="234962" _msthash="118" _mstvisible="11" _msthidden="A"></a>
+</span><small _msttexthash="3177746" _msthash="119" _mstvisible="9">Whether to expand single database in the navigation tree automatically.</small></th><td _mstvisible="8"><span class="checkbox" _mstvisible="9"><input type="checkbox" name="NavigationTreeAutoexpandSingleDb" id="NavigationTreeAutoexpandSingleDb" checked="checked" _mstvisible="10"></span><a class="restore-default hide" href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;db=gmcode#NavigationTreeAutoexpandSingleDb" title="Restore default value" style="display: inline-block; opacity: 0.25;" _mstvisible="9"><img src="./checkpoint gmd_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;" _mstvisible="10"></a></td></tr></tbody></table>
+</fieldset>
+<fieldset class="optbox" id="Navi_servers" style="display: none;" _mstvisible="4" _msthidden="2">
+<legend _msttexthash="98397" _msthash="120" _mstvisible="5">Servers</legend>
+    <p _msttexthash="526578" _msthash="121" _mstvisible="5">Servers display options.</p>
+<table class="pma-table" width="100%" cellspacing="0" _mstvisible="5" _msthidden="2">
+<tbody _mstvisible="6" _msthidden="2"><tr _mstvisible="7" _msthidden="1"><th _mstvisible="8" _msthidden="1"><label for="NavigationDisplayServers" _msttexthash="582452" _msthash="122" _mstvisible="9">Display servers selection</label><span class="doc" _mstvisible="9"><a href="http://localhost/phpMyAdmin/doc/html/config.html#cfg_NavigationDisplayServers" target="documentation" _mstvisible="10"><img src="./checkpoint gmd_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help" _mstalt="234962" _msthash="123" _mstvisible="11" _msthidden="A"></a>
+</span><small _msttexthash="1993225" _msthash="124" _mstvisible="9">Display server choice at the top of the navigation panel.</small></th><td _mstvisible="8"><span class="checkbox" _mstvisible="9"><input type="checkbox" name="NavigationDisplayServers" id="NavigationDisplayServers" checked="checked" _mstvisible="10"></span><a class="restore-default hide" href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;db=gmcode#NavigationDisplayServers" title="Restore default value" style="display: inline-block; opacity: 0.25;" _mstvisible="9"><img src="./checkpoint gmd_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;" _mstvisible="10"></a></td></tr><tr _mstvisible="7" _msthidden="1"><th _mstvisible="8" _msthidden="1"><label for="DisplayServersList" _msttexthash="504036" _msthash="125" _mstvisible="9">Display servers as a list</label><span class="doc" _mstvisible="9"><a href="http://localhost/phpMyAdmin/doc/html/config.html#cfg_DisplayServersList" target="documentation" _mstvisible="10"><img src="./checkpoint gmd_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help" _mstalt="234962" _msthash="126" _mstvisible="11" _msthidden="A"></a>
+</span><small _msttexthash="1648556" _msthash="127" _mstvisible="9">Show server listing as a list instead of a drop down.</small></th><td _mstvisible="8"><span class="checkbox" _mstvisible="9"><input type="checkbox" name="DisplayServersList" id="DisplayServersList" _mstvisible="10"></span><a class="restore-default hide" href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;db=gmcode#DisplayServersList" title="Restore default value" style="display: inline-block; opacity: 0.25;" _mstvisible="9"><img src="./checkpoint gmd_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;" _mstvisible="10"></a></td></tr></tbody></table>
+</fieldset>
+<fieldset class="optbox" id="Navi_databases" style="display: none;" _mstvisible="4" _msthidden="2">
+<legend _msttexthash="59124" _msthash="128" _mstvisible="5">Bases</legend>
+    <p _msttexthash="601211" _msthash="129" _mstvisible="5">Databases display options.</p>
+<table class="pma-table" width="100%" cellspacing="0" _mstvisible="5" _msthidden="2">
+<tbody _mstvisible="6" _msthidden="2"><tr _mstvisible="7" _msthidden="1"><th _mstvisible="8" _msthidden="1"><label for="NavigationTreeDisplayDbFilterMinimum" _msttexthash="2423304" _msthash="130" _mstvisible="9">Minimum number of databases to display the database filter box</label><span class="doc" _mstvisible="9"><a href="http://localhost/phpMyAdmin/doc/html/config.html#cfg_NavigationTreeDisplayDbFilterMinimum" target="documentation" _mstvisible="10"><img src="./checkpoint gmd_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help" _mstalt="234962" _msthash="131" _mstvisible="11" _msthidden="A"></a>
+</span></th><td _mstvisible="8"><input type="number" name="NavigationTreeDisplayDbFilterMinimum" id="NavigationTreeDisplayDbFilterMinimum" value="30" _mstvisible="9"><a class="restore-default hide" href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;db=gmcode#NavigationTreeDisplayDbFilterMinimum" title="Restore default value" style="display: inline-block; opacity: 0.25;" _mstvisible="9"><img src="./checkpoint gmd_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;" _mstvisible="10"></a></td></tr><tr _mstvisible="7" _msthidden="1"><th _mstvisible="8" _msthidden="1"><label for="NavigationTreeDbSeparator" _msttexthash="494273" _msthash="132" _mstvisible="9">Database tree separator</label><span class="doc" _mstvisible="9"><a href="http://localhost/phpMyAdmin/doc/html/config.html#cfg_NavigationTreeDbSeparator" target="documentation" _mstvisible="10"><img src="./checkpoint gmd_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help" _mstalt="234962" _msthash="133" _mstvisible="11" _msthidden="A"></a>
+</span><small _msttexthash="2306733" _msthash="134" _mstvisible="9">String that separates databases into different tree levels.</small></th><td _mstvisible="8"><input type="text" size="25" name="NavigationTreeDbSeparator" id="NavigationTreeDbSeparator" value="_" _mstvisible="9"><a class="restore-default hide" href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;db=gmcode#NavigationTreeDbSeparator" title="Restore default value" style="display: inline-block; opacity: 0.25;" _mstvisible="9"><img src="./checkpoint gmd_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;" _mstvisible="10"></a></td></tr></tbody></table>
+</fieldset>
+<fieldset class="optbox" id="Navi_tables" style="display: none;" _mstvisible="4" _msthidden="4">
+<legend _msttexthash="75621" _msthash="135" _mstvisible="5">Tables</legend>
+    <p _msttexthash="483210" _msthash="136" _mstvisible="5">Tables display options.</p>
+<table class="pma-table" width="100%" cellspacing="0" _mstvisible="5" _msthidden="4">
+<tbody _mstvisible="6" _msthidden="4"><tr _mstvisible="7" _msthidden="1"><th _mstvisible="8" _msthidden="1"><label for="NavigationTreeDefaultTabTable" _msttexthash="612664" _msthash="137" _mstvisible="9">Target for quick access icon</label><span class="doc" _mstvisible="9"><a href="http://localhost/phpMyAdmin/doc/html/config.html#cfg_NavigationTreeDefaultTabTable" target="documentation" _mstvisible="10"><img src="./checkpoint gmd_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help" _mstalt="234962" _msthash="138" _mstvisible="11" _msthidden="A"></a>
+</span></th><td _mstvisible="8"><select class="w-75" name="NavigationTreeDefaultTabTable" id="NavigationTreeDefaultTabTable" _mstvisible="9"><option value="structure" selected="selected" _msttexthash="140634" _msthash="139" _mstvisible="10">Structure</option><option value="sql" _msttexthash="24869" _msthash="140" _mstvisible="10">.SQL</option><option value="search" _msttexthash="74607" _msthash="141" _mstvisible="10">Rechercher</option><option value="insert" _msttexthash="79066" _msthash="142" _mstvisible="10">Insérer</option><option value="browse" _msttexthash="78520" _msthash="143" _mstvisible="10">Parcourir</option></select><a class="restore-default hide" href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;db=gmcode#NavigationTreeDefaultTabTable" title="Restore default value" style="display: inline-block; opacity: 0.25;" _mstvisible="9"><img src="./checkpoint gmd_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;" _mstvisible="10"></a></td></tr><tr _mstvisible="7" _msthidden="1"><th _mstvisible="8" _msthidden="1"><label for="NavigationTreeDefaultTabTable2" _msttexthash="889564" _msthash="144" _mstvisible="9">Target for second quick access icon</label><span class="doc" _mstvisible="9"><a href="http://localhost/phpMyAdmin/doc/html/config.html#cfg_NavigationTreeDefaultTabTable2" target="documentation" _mstvisible="10"><img src="./checkpoint gmd_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help" _mstalt="234962" _msthash="145" _mstvisible="11" _msthidden="A"></a>
+</span></th><td _mstvisible="8"><select class="w-75" name="NavigationTreeDefaultTabTable2" id="NavigationTreeDefaultTabTable2" _mstvisible="9"><option value="" selected="selected" _mstvisible="10"></option><option value="structure" _msttexthash="140634" _msthash="146" _mstvisible="10">Structure</option><option value="sql" _msttexthash="24869" _msthash="147" _mstvisible="10">.SQL</option><option value="search" _msttexthash="74607" _msthash="148" _mstvisible="10">Rechercher</option><option value="insert" _msttexthash="79066" _msthash="149" _mstvisible="10">Insérer</option><option value="browse" _msttexthash="78520" _msthash="150" _mstvisible="10">Parcourir</option></select><a class="restore-default hide" href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;db=gmcode#NavigationTreeDefaultTabTable2" title="Restore default value" style="display: inline-block; opacity: 0.25;" _mstvisible="9"><img src="./checkpoint gmd_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;" _mstvisible="10"></a></td></tr><tr _mstvisible="7" _msthidden="1"><th _mstvisible="8" _msthidden="1"><label for="NavigationTreeTableSeparator" _msttexthash="387582" _msthash="151" _mstvisible="9">Table tree separator</label><span class="doc" _mstvisible="9"><a href="http://localhost/phpMyAdmin/doc/html/config.html#cfg_NavigationTreeTableSeparator" target="documentation" _mstvisible="10"><img src="./checkpoint gmd_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help" _mstalt="234962" _msthash="152" _mstvisible="11" _msthidden="A"></a>
+</span><small _msttexthash="2077803" _msthash="153" _mstvisible="9">String that separates tables into different tree levels.</small></th><td _mstvisible="8"><input type="text" size="25" name="NavigationTreeTableSeparator" id="NavigationTreeTableSeparator" value="__" _mstvisible="9"><a class="restore-default hide" href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;db=gmcode#NavigationTreeTableSeparator" title="Restore default value" style="display: inline-block; opacity: 0.25;" _mstvisible="9"><img src="./checkpoint gmd_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;" _mstvisible="10"></a></td></tr><tr _mstvisible="7" _msthidden="1"><th _mstvisible="8" _msthidden="1"><label for="NavigationTreeTableLevel" _msttexthash="493233" _msthash="154" _mstvisible="9">Maximum table tree depth</label><span class="doc" _mstvisible="9"><a href="http://localhost/phpMyAdmin/doc/html/config.html#cfg_NavigationTreeTableLevel" target="documentation" _mstvisible="10"><img src="./checkpoint gmd_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help" _mstalt="234962" _msthash="155" _mstvisible="11" _msthidden="A"></a>
+</span></th><td _mstvisible="8"><input type="number" name="NavigationTreeTableLevel" id="NavigationTreeTableLevel" value="1" _mstvisible="9"><a class="restore-default hide" href="http://localhost/phpMyAdmin/index.php?route=/database/structure&amp;db=gmcode#NavigationTreeTableLevel" title="Restore default value" style="display: inline-block; opacity: 0.25;" _mstvisible="9"><img src="./checkpoint gmd_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;" _mstvisible="10"></a></td></tr></tbody></table>
+</fieldset>
+</div>
+</form>
+<script type="text/javascript" _mstvisible="2">
+    if (typeof configInlineParams === 'undefined' || !Array.isArray(configInlineParams)) {
+        configInlineParams = [];
+    }
+    configInlineParams.push(function () {
+        registerFieldValidator('FirstLevelNavigationItems', 'validatePositiveNumber', true);
+registerFieldValidator('NavigationTreeDisplayItemFilterMinimum', 'validatePositiveNumber', true);
+registerFieldValidator('NumRecentTables', 'validateNonNegativeNumber', true);
+registerFieldValidator('NumFavoriteTables', 'validateNonNegativeNumber', true);
+registerFieldValidator('NavigationWidth', 'validateNonNegativeNumber', true);
+registerFieldValidator('MaxNavigationItems', 'validatePositiveNumber', true);
+registerFieldValidator('NavigationTreeTableLevel', 'validatePositiveNumber', true);
+$.extend(Messages, {
+	'error_nan_p': 'Not a positive number!',
+	'error_nan_nneg': 'Not a non-negative number!',
+	'error_incorrect_port': 'Not a valid port number!',
+	'error_invalid_value': 'Incorrect value!',
+	'error_value_lte': 'Value must be less than or equal to %s!'});
+$.extend(defaultValues, {
+	'ShowDatabasesNavigationAsTree': true,
+	'NavigationLinkWithMainPanel': true,
+	'NavigationDisplayLogo': true,
+	'NavigationLogoLink': 'index.php',
+	'NavigationLogoLinkWindow': ['main'],
+	'NavigationTreePointerEnable': true,
+	'FirstLevelNavigationItems': '100',
+	'NavigationTreeDisplayItemFilterMinimum': '30',
+	'NumRecentTables': '10',
+	'NumFavoriteTables': '10',
+	'NavigationWidth': '240',
+	'MaxNavigationItems': '50',
+	'NavigationTreeEnableGrouping': true,
+	'NavigationTreeEnableExpansion': true,
+	'NavigationTreeShowTables': true,
+	'NavigationTreeShowViews': true,
+	'NavigationTreeShowFunctions': true,
+	'NavigationTreeShowProcedures': true,
+	'NavigationTreeShowEvents': true,
+	'NavigationTreeAutoexpandSingleDb': true,
+	'NavigationDisplayServers': true,
+	'DisplayServersList': false,
+	'NavigationTreeDisplayDbFilterMinimum': '30',
+	'NavigationTreeDbSeparator': '_',
+	'NavigationTreeDefaultTabTable': ['structure'],
+	'NavigationTreeDefaultTabTable2': [''],
+	'NavigationTreeTableSeparator': '__',
+	'NavigationTreeTableLevel': '1'});
+    });
+    if (typeof configScriptLoaded !== 'undefined' && configInlineParams) {
+        loadInlineConfig();
+    }
+</script>
+</div></div><div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix"><div class="ui-dialog-buttonset"><button type="button" class="ui-button ui-corner-all ui-widget" _msttexthash="62010" _msthash="4060">Apply</button><button type="button" class="ui-button ui-corner-all ui-widget" _msttexthash="73216" _msthash="4061">Cancel</button></div></div><div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;"></div></div><div class="ui-widget-overlay ui-front" style="z-index: 800;"></div></body></html>
